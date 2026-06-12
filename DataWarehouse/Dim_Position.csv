@@ -1,0 +1,137 @@
+﻿pos_sk,pos_name,category
+1,Visiteur Médical,Maitrise-1
+2,Pharmacienne Chargée Contrôle Qualité,CADRE
+3,FIELD FORCE MANAGER,CADRE
+4,Délégué Médical,Maitrise-1
+5,Opérateur de Production,Exécution-1
+6,Visiteur Pharmaceutique,Maitrise-1
+7,CRM Specialist,Maitrise-2
+8,Superviseur Médical,CADRE
+9,Chef de Produit,CADRE
+10,Pharmacien Responsable Technique,Cadre sup
+11,Digital marketing specialist,Maitrise-1
+12,Responsable Magasin Produits Finis,CADRE
+13,Analyste Contrôle Qualité,Exécution-1
+14,Analyste Developpement,Exécution-1
+15,Spécialiste en Technologie Pharmaceutique,MAITRISE-1
+16,Acheteur Junior,Maitrise-1
+17,IT Development Associate,Maitrise-1
+18,Technicien Maintenance Utilites,Exécution-1
+19,Chef de Bloc,CADRE
+20,Technicien Maintenance Process,Exécution-1
+21,Analyste Microbiologie,Exécution-1
+22,INNOVATION MANAGER,CADRE
+23,Opératrice d'Hygiene,Exécution-2
+24,Medical Manager,CADRE
+25,Analyste Junior,Exécution-1
+26,nan,CADRE
+27,Assistante de direction,Maitrise-2
+28,Data Support Analyste,Maitrise-2
+29,Spécialiste des grands comptes,Maitrise-1
+30,Spécialiste Assurance Qualité,Maitrise-1
+31,Responsable des Magasins,CADRE
+32,Contrôleur  de Gestion,Maitrise-1
+33,"Responsable Achat, Approvisionment et Transit",CADRE
+34,Comptable,Exécution-2
+35,PATIENT CENTRICITY,Maitrise-1
+36,Pharmacien de Production,CADRE
+37,Standardiste et Bureau d'Ordre,Exécution-2
+38,Ingénieur Energitique,Maitrise-1
+39,MSL,CADRE
+40,Pharmacien Contrôle Qualité,CADRE
+41,PHARMACOVIGILANCE MANAGER,CADRE
+42,PEOPLE DEVELOPMENT SPECIALIST,Maitrise-1
+43,Superviseur de Bloc,Maitrise-2
+44,Assistante de Direction Général,Exécution-1
+45,Superviseur Bloc de Pesee,Maitrise-2
+46,International Sales Manager,Cadre Sup
+47,Magasinier (Mp/Ace),Exécution-2
+48,Finance And Administration Manager,cadre sup
+49,Chargée Revue de Lot,Maitrise-2
+50,Responsable Assurance Contrôle au sein du département Contrôle Qualité,CADRE
+51,Responsable Facturation Achat,Maitrise-1
+52,Opérateur de Pesee,Exécution-2
+53,Responsable Paie et Caisse,CADRE
+54,Opérateur de Fabrication,Exécution-1
+55,Chargée Gestion Documentaire,Maitrise-2
+56,Chef de Chaine,Exécution-1
+57,Assistante Magasin Mp/Ace,Exécution-1
+58,Chargée des Relations avec L'Administration,Maitrise-1
+59,Assistante des Opérations,Exécution-1
+60,Responsable Assurance Qualite,CADRE
+61,Préparateur Labo,Exécution-2
+62,Directeur Industrielle,Cadre Sup
+63,COMMERCIAL EXCELLENCE MANAGER,CADRE
+64,Conducteur Machine,Exécution-1
+65,Administrateur Import/Export,Maitrise-2
+66,Chargée  Revue de Lot,Maitrise-2
+67,Assistante Pharmacien Responsable Technique,Exécution-1
+68,Administration des Ventes Senior,CADRE
+69,Responsable magasin consommable et Archive,Exécution-1
+70,Opératrice Polyvalente,Exécution-2
+71,Opérateur de Nettoyage Des Equipements,Exécution-2
+72,Responsable Controle Volant,Maitrise-1
+73,Superviseur des Opérateurs d'Hygiène,Exécution-2
+74,Responsable Travaux Généraux,CADRE
+75,Logistics Manager,Cadre Sup
+76,Chargée de la  vignetteuse,Maitrise-2
+77,Analyste Microbiologie Senior,Exécution-1
+78,Ouvrier d'Entretien Travaux Généraux,Exécution-2
+79,Business Development Manager,Cadre Sup
+80,Responsable Physico-Chimie,CADRE
+81,Magasinier Produits Finis,Exécution-2
+82,Packaging et Graphic Designer,Maitrise-1
+83,Assistante Contrôle Qualité,Exécution-1
+84,Regulatory Affairs Manager,Cadre Sup
+85,CONTROLEUR DE GESTION INDUSTRIELLE,CADRE
+86,Financier Senior et Chargé du Parc Automobile,Maitrise-1
+87,Chef Projet Informatique Team et Virtualization & Storage System Engineer,CADRE
+88,Chargé de la Trésorerie,Maitrise-2
+89,"Responsable Environnement, Hygiène et Sécurité",CADRE
+90,Assistante Qualité de Production,Exécution-1
+91,Operational Security Manager,CADRE
+92,Chargé de Qualification des Équipements des Laboratoires,Maitrise-1
+93,Controleur à la Réception(Mp/Ac) et en Cours de Production(Psf/Pf),Exécution-2
+94,Administrateur Facturation Clients Senior,Maitrise-1
+95,Responsable Magasin (Mp/Ace),CADRE
+96,FLM,Maitrise-1
+97,Chef Projet Systèmes d'Information et Responsable Sécurité des Systèmes d'Information,CADRE
+98,Network Security Engineer,Maitrise-1
+99,Responsable Microbiologie Et Contrôles à la Réception,CADRE
+100,Human Resources Manager,Cadre Sup
+101,Agent de Sécurité,Exécution-2
+102,Livreur,Exécution-2
+103,Directeur Systèmes d'Information et Responsable Système de Management de Sécurité de l'information,Cadre Sup
+104,Pharmacien Responsable,CADRE
+105,Agent de Transit,Maitrise-2
+106,Chargée de L'Administration des Ressources Humaines,Maitrise-1
+107,Service Desk Engineer,Maitrise-1
+108,Opérateur de Nettoyage des Equipements,Exécution-2
+109,Gestionnaire de Stock,Maitrise-2
+110,Responsable Comptable et Finance,CADRE
+111,Informatique Team Help Desk,Maitrise-1
+112,Cadre Financier et Responsable  Portefeuille Assurance,Maitrise-1
+113,PHARMACEUTICAL DEVELOPMENT MANAGER,Cadre Sup
+114,Responsable Maintenance Utilites,CADRE
+115,Chauffeur,Exécution-2
+116,Responsable logistique et consommable,Exécution-1
+117,Responsable Stabilité,Maitrise-1
+118,Responsable Maintenance Process,CADRE
+119,Sales Operations Support,CADRE
+120,Responsable des Affaires Juridiques,CADRE
+121,Export Area Manager,CADRE
+122,Pharmacien Règlementaire Export,MAITRISE-1
+123,Acheteur,Maitrise-2
+124,Management Control Manager,Cadre sup
+125,Sales Force Effectiveness,CADRE
+126,Medical Affaires and Clinical Operations Manager,CADRE
+127,National Sales Manager,Cadre sup
+128,Training and Public Affairs Manager,Cadre
+129,Administrateur Facturation Clients Junior,Maitrise-2
+130,Spécialiste Ressources Humaines (Sales),Maitrise-1
+131,Contrôleur à la Réception,Exécution-1
+132,Analysis Coordinator,Maitrise-1
+133,Pharmacien Chargé des Opérations de Production,CADRE
+134,Spécialiste Qualification et Metrologie,Maitrise-1
+135,Scheduling and Planning Specialist,Maitrise-2
+136,Spécialiste Ressources Humaines (PLANT),Maitrise-1

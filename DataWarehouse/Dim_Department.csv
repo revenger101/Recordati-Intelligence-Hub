@@ -1,0 +1,21 @@
+﻿dept_sk,dept_name,direction
+1,Sales Force,Direction National Sales and Marketing
+2,Contrôle Qualité,Direction Management Qualité
+3,Marketing And Sales,Direction National Sales and Marketing
+4,Production,Direction Industrielle
+5,Pharmacien Responsable Technique,Pharmacien Responsable Technique
+6,Logistique,Direction de Logistique
+7,Developpement,Direction de Développement
+8,Systèmes D'Information,Direction des Systèmes d'Information
+9,Maintenance,Direction Industrielle
+10,Business Development,Business Development
+11,"Environnement, Hygiène et Sécurité",Direction Industrielle
+12,MEDI-MARKETING,Direction MEDI-MARKETING
+13,Direction Générale,Direction Générale
+14,Assurance Qualité,Direction Management Qualité
+15,Contrôle de Gestion,Direction Contrôle de Gestion
+16,Direction  Administrative et Financière,Direction Administrative et Financière
+17,Ressources Humaines,Direction des Ressources Humaines
+18,International Sales,Direction International Sales
+19,Affaires Réglementaires,Direction des Affaires Réglementaires
+20,"Qualification, Validation et Metrologie",Direction Management Qualité

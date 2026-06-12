@@ -1,0 +1,20 @@
+{
+  "Dim_Employee": {
+    "full_name": "Unnamed: 1",
+    "matricule": "Matricule",
+    "department": "Direction",
+    "function": "Sanctions",
+    "site": "SITE OPALIA",
+    "age": "mariage",
+    "gender": "Sexe du salari\u00e9"
+  },
+  "Fact_Turnover": {
+    "date_fk": "DATE DE SORTIE",
+    "employee_fk": "REMPLACEMENT OF",
+    "reason": "Reasons"
+  },
+  "Fact_Employee_Snapshot": {
+    "date_fk": "\ufeffJOURNAL DE PAIE F\u00e9vrier 2025"
+  },
+  "Fact_Absence": {}
+}

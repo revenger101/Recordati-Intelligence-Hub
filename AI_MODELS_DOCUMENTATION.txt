@@ -1,0 +1,61 @@
+========================================================================
+             OPALIA HR — DOCUMENTATION MOTEUR AI (NEXUS SYNAPSE)
+========================================================================
+
+Ce document détaille le fonctionnement technique et stratégique des modèles 
+d'intelligence artificielle intégrés à la plateforme OpaliaHR.
+
+1. ARCHITECTURE DU PIPELINE AI
+------------------------------------------------------------------------
+Le moteur fonctionne selon un cycle de trois phases automatisées :
+
+A. Phase ETL (nexus_synapse_etl.py) :
+   - Extraction des données depuis PostgreSQL.
+   - Nettoyage des variables (Âge, Salaire, Ancienneté, Heures Supp, Absences).
+   - Normalisation des données pour l'ingestion par le modèle.
+
+B. Phase Prédictive (train_random_forest.py) :
+   - Modèle : Random Forest Classifier (Forêt Aléatoire).
+   - Fonctionnement : Le modèle analyse les corrélations entre les données 
+     historiques et les départs constatés.
+   - Sortie : Génère un "risk_score" (0.0 à 1.0) pour chaque collaborateur.
+
+C. Phase Prescriptive (generate_strategic_recommendations.py) :
+   - Analyse les résultats du modèle ML.
+   - Génère des recommandations textuelles basées sur les "Signaux Faibles".
+
+2. DÉTAILS DU MODÈLE ML (RANDOM FOREST)
+------------------------------------------------------------------------
+Le choix du Random Forest permet une grande stabilité et une "Explainability" 
+(XAI). Les variables clés influençant le score sont :
+
+- Taux d'Absenteïsme : Corrélation forte avec le désengagement.
+- Intensité des Heures Supplémentaires : Indicateur de risque de burnout.
+- Ancienneté Critique : Le modèle identifie des zones de fragilité (ex: 12-24 mois).
+- Écart Salarial : Comparaison avec la moyenne du département.
+
+3. EXPLAINABLE AI (XAI) - FACTEURS DE RISQUE
+------------------------------------------------------------------------
+Contrairement aux modèles "boîte noire", Nexus explique ses scores :
+- Si Score > 70% : Le système cherche le facteur dominant.
+- Exemple : Si (Absences > 15 jours) -> Affiche "Absentéisme Critique".
+- Exemple : Si (Heures Supp > 40h) -> Affiche "Surcharge Overtime (HS)".
+
+4. GÉNÉRATION DES RECOMMANDATIONS STRATÉGIQUES
+------------------------------------------------------------------------
+Le moteur de recommandation utilise une logique heuristique synchronisée :
+
+- RISQUE OVERTIME -> Recommande un "Audit de charge de travail".
+- RISQUE ANCIENNETÉ -> Recommande un "Plan de fidélisation Newcomers".
+- RISQUE ABSENCE -> Recommande un "Audit de climat social".
+
+5. INTERFACE ET VISUALISATION
+------------------------------------------------------------------------
+Les résultats sont visualisés dans trois sections de l'application :
+- Command Center : Score de risque moyen global.
+- Turnover Overview (Predictive) : Segmentation par âge et ancienneté.
+- Nexus Intelligence Hub : Watchlist prioritaire et Plan d'Action.
+
+========================================================================
+Propriété d'OpaliaHR - Moteur de prédiction v6.2-Industrial
+========================================================================

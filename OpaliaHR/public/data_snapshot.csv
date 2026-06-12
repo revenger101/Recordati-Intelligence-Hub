@@ -1,0 +1,639 @@
+﻿id,name,dept,role,salary,age
+02754,Agent,FOE,Superviseur Médical,0,35
+02943,Agent,FOE,Délégué Médical,0,35
+02944,Agent,FOE,Visiteur Médical,0,35
+02756,Agent,FOE,Superviseur Médical,0,35
+02753,Agent,FOE,Superviseur Médical,0,35
+02768,Agent,FOE,Chef de Produit,0,35
+02826,Agent,FOE,Visiteur Médical,0,35
+02772,Agent,INDUS,Pharmacien Responsable Technique,0,35
+20045,Agent,FOE,Visiteur Médical,0,35
+02867,Agent,INDUS,Technicien Maintenance Process,0,35
+02873,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02780,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02641,Agent,RD,Analyste Developpement,0,35
+20050,Agent,FOE,Visiteur Médical,0,35
+20049,Agent,FOE,Visiteur Médical,0,35
+02900,Agent,FOE,Visiteur Médical,0,35
+02829,Agent,RD,Assistante de direction,0,35
+02810,Agent,INDUS,Analyste Contrôle Qualité,0,35
+20046,Agent,FOE,Délégué Médical,0,35
+02887,Agent,SHO,Chef de Produit,0,35
+02832,Agent,FOE,Délégué Médical,0,35
+02904,Agent,INDUS,Acheteur,0,35
+02942,Agent,INDUS,Opératrice d'Hygiene,0,35
+20047,Agent,FOE,Délégué Médical,0,35
+02836,Agent,FOE,Visiteur Médical,0,35
+02795,Agent,INDUS,Chef de Bloc,0,35
+02906,Agent,SHO,CRM Specialist,0,35
+02715,Agent,INDUS,Spécialiste Assurance Qualité,0,35
+02802,Agent,INDUS,Chef de Bloc,0,35
+02918,Agent,FOE,Délégué Médical,0,35
+02917,Agent,FOE,Visiteur Pharmaceutique,0,35
+02842,Agent,FOE,Délégué Médical,0,35
+02341,Agent,INDUS,Analyste Microbiologie,0,35
+02926,Agent,FOE,Visiteur Médical,0,35
+02928,Agent,FOE,Visiteur Médical,0,35
+02803,Agent,RD,Innovation Manager,0,35
+02845,Agent,FOE,Visiteur Pharmaceutique,0,35
+02898,Agent,SHO,Chef de Produit,0,35
+02850,Agent,FOE,Visiteur Médical,0,35
+02805,Agent,MEDIM,Medical Manager,0,35
+02808,Agent,GA,Comptable,0,35
+02495,Agent,INDUS,Opérateur de Production,0,35
+02665,Agent,INDUS,Technicien Maintenance Utilites,0,35
+02934,Agent,GA,Spécialiste Ressources Humaines (SALES),0,35
+02899,Agent,INDUS,Pharmacien Assurance Qualité,0,35
+02853,Agent,INDUS,Opérateur de Production,0,35
+02459,Agent,INDUS,Opérateur de Production,0,35
+02854,Agent,INDUS,Patient Centricity,0,35
+02935,Agent,FOE,Visiteur Médical,0,35
+20052,Agent,FOE,Visiteur Médical,0,35
+02901,Agent,INDUS,Responsable Maintenance et Ingenierie,0,35
+02902,Agent,INDUS,Technicien Maintenance Utilites,0,35
+20053,Agent,FOE,Délégué Médical,0,35
+02816,Agent,INDUS,Technicien Maintenance Utilites,0,35
+02820,Agent,INDUS,Technicien Maintenance Process,0,35
+20054,Agent,FOE,Délégué Médical,0,35
+02940,Agent,FOE,Visiteur Pharmaceutique,0,35
+02939,Agent,FOE,Délégué Médical,0,35
+20051,Agent,FOE,Superviseur Médical,0,35
+02912,Agent,INDUS,PHARMACIEN CHARGE CONTROLE QUALITE,0,35
+02913,Agent,INDUS,Responsable des Magasins,0,35
+02930,Agent,INDUS,Pharmacien Chargé des Opérations de Production,0,35
+02931,Agent,GA,Standardiste et Bureau d'Ordre,0,35
+02828,Agent,INDUS,"Responsable Achat, Approvisionment et Transit",0,35
+02865,Agent,FOE,Délégué Médical,0,35
+02866,Agent,INDUS,Technicien Maintenance Process,0,35
+02932,Agent,GA,HR Development Specialist,0,35
+02941,Agent,FOE,Visiteur Pharmaceutique,0,35
+02936,Agent,INDUS,Pharmacien  CQ Chargée de la Stabilité,0,35
+02886,Agent,FOE,Visiteur Médical,0,35
+02831,Agent,INDUS,Pharmacien Contrôle Qualité,0,35
+02833,Agent,GA,Administrateur Facturation Clients,0,35
+02878,Agent,INDUS,Chef de Bloc,0,35
+02890,Agent,FOE,Visiteur Médical,0,35
+02841,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02840,Agent,FOE,Superviseur Médical,0,35
+02662,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02847,Agent,MEDIM,MSL,0,35
+02706,Agent,INDUS,Opératrice d'Hygiene,0,35
+02851,Agent,MEDIM,Pharmacovigilance Manager,0,35
+02827,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02601,Agent,INDUS,Opérateur de Production,0,35
+20044,Agent,FOE,Visiteur Médical,0,35
+01077,Agent,INDUS,Opérateur de Fabrication,0,35
+20042,Agent,FOE,Délégué Médical,0,35
+20043,Agent,FOE,Délégué Médical,0,35
+01595,Agent,INDUS,Analyste Junior,0,35
+02807,Agent,INDUS,Responsable Magasin Produits Finis,0,35
+02839,Agent,RD,Spécialiste en Technologie Pharmaceutique,0,35
+02849,Agent,RD,R&D Spécialiste Assurance Qualité,0,35
+02687,Agent,INDUS,"Responsable Environnement, Hygiène et Sécurité",0,35
+02697,Agent,INDUS,Spécialiste Assurance Qualité,0,35
+01765,Agent,INDUS,Acheteur,0,35
+02452,Agent,INDUS,Administrateur Facturation Clients,0,35
+00514,Agent,INDUS,Administrateur Import/Export,0,35
+01796,Agent,INDUS,Administrateur Import/Export,0,35
+00718,Agent,INDUS,Administration Facturation clients Senior,0,35
+01378,Agent,INDUS,Agent de Sécurité,0,35
+01379,Agent,INDUS,Agent de Sécurité,0,35
+01708,Agent,INDUS,Agent de Transit,0,35
+02302,Agent,RD,Analysis Coordinator,0,35
+02451,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02419,Agent,RD,Spécialiste en Technologie Pharmaceutique,0,35
+02521,Agent,INDUS,Analyste Junior,0,35
+02290,Agent,INDUS,Analyste Junior,0,35
+02154,Agent,INDUS,Analyste Junior,0,35
+02394,Agent,INDUS,Analyste Junior,0,35
+01989,Agent,INDUS,Analyste Junior,0,35
+00717,Agent,INDUS,Analyste Microbiologie Senior,0,35
+00086,Agent,INDUS,Assistante Contrôle Qualité,0,35
+00013,Agent,GA,Assistante de Direction Général,0,35
+00386,Agent,SHO,Assistante des Opérations,0,35
+00327,Agent,INDUS,Assistante Magasin Mp/Ace,0,35
+00676,Agent,INDUS,Assistante Pharmacien Responsable Technique,0,35
+01336,Agent,INDUS,Assistante Qualité de Production,0,35
+01065,Agent,RD,Business Development Manager,0,35
+01981,Agent,GA,Cadre Financier et Responsable  Portefeuille Assurance,0,35
+01272,Agent,GA,Chargé de la Trésorerie,0,35
+01502,Agent,INDUS,Chargé de Qualification des Équipements des Laboratoires,0,35
+01010,Agent,INDUS,Chargée de la  vignetteuse,0,35
+01715,Agent,GA,Chargée de L'Administration des Ressources Humaines,0,35
+00361,Agent,GA,Chargée des Relations avec L'Administration,0,35
+00303,Agent,INDUS,Chargée Gestion Documentaire,0,35
+00210,Agent,INDUS,Chargée Revue de Lot,0,35
+01895,Agent,GA,Chauffeur,0,35
+02368,Agent,INDUS,Chef de Bloc,0,35
+01317,Agent,INDUS,Chef de Chaine,0,35
+00307,Agent,INDUS,Chef de Chaine,0,35
+01690,Agent,INDUS,Chef de Chaine,0,35
+00304,Agent,INDUS,Chef de Chaine,0,35
+00300,Agent,INDUS,Chef de Chaine,0,35
+00453,Agent,INDUS,Chef de Chaine,0,35
+00482,Agent,INDUS,Chef de Chaine,0,35
+00817,Agent,INDUS,Chef de Chaine,0,35
+00372,Agent,INDUS,Chef de Chaine,0,35
+00419,Agent,INDUS,Chef de Chaine,0,35
+02691,Agent,SHO,Chef de Produit,0,35
+02565,Agent,SHO,Chef de Produit,0,35
+01465,Agent,GA,Chef Projet Informatique Team et Virtualization & Storage System Engineer,0,35
+01127,Agent,GA,Chef Projet Systèmes d'Information et Responsable Sécurité des Systèmes d'Information,0,35
+00420,Agent,SHO,Commercial Excellence Manager,0,35
+02646,Agent,GA,Comptable,0,35
+02125,Agent,INDUS,Conducteur Machine,0,35
+01351,Agent,INDUS,Conducteur Machine,0,35
+00759,Agent,INDUS,Conducteur Machine,0,35
+01250,Agent,INDUS,Conducteur Machine,0,35
+01833,Agent,INDUS,Conducteur Machine,0,35
+02474,Agent,INDUS,Conducteur Machine,0,35
+02517,Agent,INDUS,Conducteur Machine,0,35
+02428,Agent,INDUS,Conducteur Machine,0,35
+00856,Agent,INDUS,Conducteur Machine,0,35
+00859,Agent,INDUS,Conducteur Machine,0,35
+01293,Agent,INDUS,Conducteur Machine,0,35
+00469,Agent,INDUS,Conducteur Machine,0,35
+00530,Agent,INDUS,Conducteur Machine,0,35
+02843,Agent,GA,Contrôleur  de Gestion,0,35
+02315,Agent,INDUS,Controleur à la Réception(Mp/Ac) et en Cours de Production(Psf/Pf),0,35
+01660,Agent,INDUS,Opérateur de Fabrication,0,35
+01473,Agent,INDUS,Controleur à la Réception(Mp/Ac) et en Cours de Production(Psf/Pf),0,35
+01579,Agent,INDUS,Controleur à la Réception(Mp/Ac) et en Cours de Production(Psf/Pf),0,35
+02771,Agent,FOE,Délégué Médical,0,35
+02619,Agent,FOE,Délégué Médical,0,35
+01958,Agent,FOE,Délégué Médical,0,35
+01002,Agent,FOE,Délégué Médical,0,35
+01137,Agent,FOE,Délégué Médical,0,35
+01978,Agent,FOE,Délégué Médical,0,35
+01160,Agent,FOE,Délégué Médical,0,35
+02596,Agent,FOE,Délégué Médical,0,35
+02733,Agent,SHO,Digital marketing specialist,0,35
+00421,Agent,INDUS,Directeur Industrielle,0,35
+01937,Agent,GA,Directeur Systèmes d'Information et Responsable Système de Management de Sécurité de l'information,0,35
+02353,Agent,SHO,Export Area Manager,0,35
+00112,Agent,FOE,Field Force Manager,0,35
+00120,Agent,GA,Finance And Administration Manager,0,35
+01204,Agent,GA,Financier Senior et Chargé du Parc Automobile,0,35
+01853,Agent,FOE,FLM,0,35
+01987,Agent,INDUS,Gestionnaire de Stock,0,35
+01871,Agent,GA,Human Resources Manager,0,35
+01900,Agent,GA,Informatique Team Help Desk,0,35
+00259,Agent,SHO,International Sales Manager,0,35
+20002,Agent,SHO,Learning & Building Capabilities Manager,0,35
+02328,Agent,GA,Legal Affairs Manager & Comliance Officer,0,35
+01355,Agent,INDUS,Livreur,0,35
+01832,Agent,INDUS,Livreur,0,35
+00574,Agent,INDUS,Logistics Manager,0,35
+02250,Agent,INDUS,Magasinier (Mp/Ace),0,35
+02213,Agent,INDUS,Magasinier (Mp/Ace),0,35
+01743,Agent,INDUS,Magasinier (Mp/Ace),0,35
+01224,Agent,INDUS,Magasinier (Mp/Ace),0,35
+00895,Agent,INDUS,Magasinier (Mp/Ace),0,35
+01753,Agent,INDUS,Magasinier (Mp/Ace),0,35
+00041,Agent,INDUS,Magasinier (Mp/Ace),0,35
+02447,Agent,INDUS,Magasinier Produits Finis,0,35
+01810,Agent,INDUS,Magasinier Produits Finis,0,35
+02375,Agent,INDUS,Magasinier Produits Finis,0,35
+00329,Agent,INDUS,Magasinier Produits Finis,0,35
+01129,Agent,INDUS,Magasinier Produits Finis,0,35
+01105,Agent,INDUS,Magasinier Produits Finis,0,35
+02380,Agent,GA,Management Control Manager,0,35
+02927,Agent,SHO,Market Access Associate,0,35
+02525,Agent,MEDIM,Medical Affaires and Clinical Operations Manager,0,35
+02528,Agent,SHO,National Sales Manager,0,35
+01859,Agent,GA,Network Security Engineer,0,35
+02530,Agent,INDUS,Opérateur de Fabrication,0,35
+00961,Agent,INDUS,Opérateur de Fabrication,0,35
+00332,Agent,INDUS,Opérateur de Fabrication,0,35
+01655,Agent,INDUS,Opérateur de Fabrication,0,35
+01476,Agent,INDUS,Opérateur de Fabrication,0,35
+00107,Agent,INDUS,Opérateur de Fabrication,0,35
+01823,Agent,INDUS,Opérateur de Fabrication,0,35
+00417,Agent,INDUS,Opérateur de Fabrication,0,35
+01672,Agent,INDUS,Opérateur de Fabrication,0,35
+01354,Agent,INDUS,Opérateur de Fabrication,0,35
+01286,Agent,INDUS,Opérateur de Fabrication,0,35
+01120,Agent,INDUS,Opérateur de Fabrication,0,35
+01045,Agent,INDUS,Opérateur de Fabrication,0,35
+00966,Agent,INDUS,Opérateur de Nettoyage Des Equipements,0,35
+02244,Agent,INDUS,Opérateur de Nettoyage des Equipements,0,35
+01461,Agent,INDUS,Opérateur de Nettoyage des Equipements,0,35
+00480,Agent,INDUS,Opérateur de Pesee,0,35
+00294,Agent,INDUS,Opérateur de Pesee,0,35
+02455,Agent,INDUS,Opérateur de Production,0,35
+02481,Agent,INDUS,Opérateur de Production,0,35
+01551,Agent,INDUS,Opérateur de Production,0,35
+01710,Agent,INDUS,Opérateur de Production,0,35
+01319,Agent,INDUS,Opérateur de Production,0,35
+01479,Agent,INDUS,Opérateur de Production,0,35
+01089,Agent,INDUS,Opérateur de Production,0,35
+01742,Agent,INDUS,Opérateur de Production,0,35
+01816,Agent,INDUS,Opérateur de Production,0,35
+01712,Agent,INDUS,Opérateur de Production,0,35
+01448,Agent,INDUS,Opérateur de Production,0,35
+01198,Agent,INDUS,Opérateur de Production,0,35
+00902,Agent,INDUS,Opérateur de Production,0,35
+02470,Agent,INDUS,Opérateur de Production,0,35
+01135,Agent,INDUS,Opérateur de Production,0,35
+01553,Agent,INDUS,Opérateur de Production,0,35
+02174,Agent,INDUS,Opérateur de Production,0,35
+01706,Agent,INDUS,Opérateur de Production,0,35
+01046,Agent,INDUS,Opérateur de Production,0,35
+02351,Agent,INDUS,Opérateur de Production,0,35
+01868,Agent,INDUS,Opérateur de Production,0,35
+01552,Agent,INDUS,Opérateur de Production,0,35
+01745,Agent,INDUS,Opérateur de Production,0,35
+01458,Agent,INDUS,Opérateur de Production,0,35
+02390,Agent,INDUS,Opérateur de Production,0,35
+01279,Agent,INDUS,Opérateur de Production,0,35
+01737,Agent,INDUS,Opérateur de Production,0,35
+01575,Agent,INDUS,Opérateur de Production,0,35
+01620,Agent,INDUS,Opérateur de Production,0,35
+01253,Agent,INDUS,Opérateur de Production,0,35
+02325,Agent,INDUS,Opérateur de Production,0,35
+01671,Agent,INDUS,Opérateur de Production,0,35
+01615,Agent,INDUS,Opérateur de Production,0,35
+01549,Agent,INDUS,Opérateur de Production,0,35
+01619,Agent,INDUS,Opérateur de Production,0,35
+01392,Agent,GA,Operational Security Manager,0,35
+02264,Agent,INDUS,Opératrice d'Hygiene,0,35
+01276,Agent,INDUS,Opératrice d'Hygiene,0,35
+01793,Agent,INDUS,Opératrice d'Hygiene,0,35
+00832,Agent,INDUS,Opératrice d'Hygiene,0,35
+02377,Agent,INDUS,Opératrice d'Hygiene,0,35
+00927,Agent,INDUS,Opératrice d'Hygiene,0,35
+00804,Agent,INDUS,Opératrice d'Hygiene,0,35
+00833,Agent,INDUS,Opératrice Polyvalente,0,35
+00851,Agent,INDUS,Opératrice Polyvalente,0,35
+01600,Agent,INDUS,Ouvrier d'Entretien Travaux Généraux,0,35
+01770,Agent,INDUS,Ouvrier d'Entretien Travaux Généraux,0,35
+01030,Agent,INDUS,Ouvrier d'Entretien Travaux Généraux,0,35
+01181,Agent,INDUS,Ouvrier d'Entretien Travaux Généraux,0,35
+01561,Agent,INDUS,Ouvrier d'Entretien Travaux Généraux,0,35
+01882,Agent,RD,Pharmaceutical Development Manager,0,35
+02225,Agent,RD,Pharmacien Règlementaire Export,0,35
+20010,Agent,SHO,Pharmacien Responsable,0,35
+00621,Agent,INDUS,Planning Coordinator,0,35
+00399,Agent,INDUS,Préparateur Labo,0,35
+01334,Agent,RD,Regulatory Affairs Manager,0,35
+00221,Agent,INDUS,Responsable Assurance Contrôle au sein du département Contrôle Qualité,0,35
+00396,Agent,INDUS,Responsable Assurance Qualite,0,35
+01556,Agent,GA,Responsable Comptable et Finance,0,35
+00964,Agent,INDUS,Production Team Leader,0,35
+00230,Agent,GA,Responsable Facturation Achat,0,35
+01780,Agent,INDUS,Responsable logistique et consommable,0,35
+01207,Agent,INDUS,Responsable Magasin (Mp/Ace),0,35
+00712,Agent,INDUS,Responsable magasin consommable et Archive,0,35
+01952,Agent,INDUS,Responsable Maintenance Process,0,35
+01836,Agent,INDUS,Responsable Maintenance Utilites,0,35
+00042,Agent,GA,Responsable Paie et Caisse,0,35
+00954,Agent,INDUS,Responsable Physico-Chimie,0,35
+02096,Agent,INDUS,Responsable Stabilité,0,35
+00957,Agent,INDUS,Responsable Travaux Généraux,0,35
+02522,Agent,SHO,Sales Force Effectiveness,0,35
+01240,Agent,INDUS,Sales&Operation planning Officer,0,35
+01681,Agent,GA,Service Desk Engineer,0,35
+01625,Agent,INDUS,Spécialiste Assurance Qualité,0,35
+02343,Agent,INDUS,Spécialiste de l'excellence opérationnelle,0,35
+01004,Agent,FOE,Spécialiste des grands comptes,0,35
+01239,Agent,FOE,Spécialiste des grands comptes,0,35
+02402,Agent,FOE,Spécialiste des grands comptes,0,35
+02268,Agent,SHO,Spécialiste des grands comptes,0,35
+02670,Agent,INDUS,Spécialiste Qualification et Metrologie,0,35
+02773,Agent,GA,Spécialiste Ressources Humaines (PLANT),0,35
+00096,Agent,INDUS,Superviseur Bloc de Pesee,0,35
+02487,Agent,INDUS,Superviseur de Bloc,0,35
+01814,Agent,INDUS,Superviseur de Bloc,0,35
+00075,Agent,INDUS,Superviseur de Bloc,0,35
+00007,Agent,INDUS,Superviseur de Bloc,0,35
+01634,Agent,INDUS,Superviseur de Bloc,0,35
+00677,Agent,INDUS,Superviseur des Opérateurs d'Hygiène,0,35
+01311,Agent,INDUS,"Superviseur Environnement, Hygiène et Sécurité",0,35
+20036,Agent,FOE,Superviseur Médical,0,35
+00402,Agent,FOE,Superviseur Médical,0,35
+02551,Agent,INDUS,Technicien Maintenance Utilites,0,35
+01493,Agent,INDUS,Technicien Maintenance Utilites,0,35
+02100,Agent,INDUS,Technicien Maintenance Utilites,0,35
+02536,Agent,GA,Training and Public Affairs Manager,0,35
+02751,Agent,FOE,Visiteur Médical,0,35
+20039,Agent,FOE,Visiteur Médical,0,35
+02738,Agent,FOE,Visiteur Médical,0,35
+02730,Agent,FOE,Visiteur Médical,0,35
+20034,Agent,FOE,Visiteur Médical,0,35
+01033,Agent,FOE,Visiteur Médical,0,35
+02714,Agent,FOE,Visiteur Médical,0,35
+02141,Agent,FOE,Visiteur Médical,0,35
+02385,Agent,FOE,Visiteur Médical,0,35
+02677,Agent,FOE,Visiteur Médical,0,35
+02614,Agent,FOE,Visiteur Médical,0,35
+02694,Agent,FOE,Visiteur Médical,0,35
+02731,Agent,FOE,Visiteur Médical,0,35
+20013,Agent,FOE,Visiteur Médical,0,35
+01141,Agent,FOE,Spécialiste des grands comptes,0,35
+02679,Agent,FOE,Visiteur Médical,0,35
+02155,Agent,FOE,Visiteur Médical,0,35
+02732,Agent,FOE,Visiteur Médical,0,35
+02356,Agent,FOE,Visiteur Médical,0,35
+02683,Agent,FOE,Visiteur Médical,0,35
+02681,Agent,FOE,Visiteur Médical,0,35
+20025,Agent,FOE,Visiteur Médical,0,35
+02467,Agent,FOE,Visiteur Médical,0,35
+02555,Agent,FOE,Visiteur Médical,0,35
+02669,Agent,FOE,Visiteur Pharmaceutique,0,35
+02673,Agent,FOE,Visiteur Pharmaceutique,0,35
+02564,Agent,FOE,Visiteur Pharmaceutique,0,35
+01385,Agent,INDUS,Opérateur de Production,0,35
+02729,Agent,INDUS,Conducteur Machine,0,35
+02703,Agent,FOE,Visiteur Médical,0,35
+02708,Agent,FOE,Visiteur Médical,0,35
+02652,Agent,RD,Chef Projet et chargé de l'Assurance Qualité de Développement,0,35
+02711,Agent,RD,Analyste Developpement,0,35
+02337,Agent,INDUS,Opérateur de Production,0,35
+02094,Agent,INDUS,Opérateur de Production,0,35
+02713,Agent,FOE,Visiteur Médical,0,35
+02554,Agent,INDUS,Technicien Maintenance Process,0,35
+02700,Agent,INDUS,Opérateur de Production,0,35
+02657,Agent,GA,Spécialiste Ressources Humaines (Sales),0,35
+02659,Agent,INDUS,Technicien Maintenance Process,0,35
+02345,Agent,INDUS,Opérateur de Production,0,35
+02710,Agent,INDUS,Chef de Projet Management Qualité,0,35
+02739,Agent,GA,IT Development Associate,0,35
+02719,Agent,INDUS,Responsable des Magasins,0,35
+02482,Agent,INDUS,Technicien Maintenance Process,0,35
+02674,Agent,INDUS,Acheteur Junior,0,35
+02676,Agent,FOE,Visiteur Médical,0,35
+02678,Agent,FOE,Visiteur Médical,0,35
+02680,Agent,FOE,Visiteur Médical,0,35
+02685,Agent,INDUS,Chef de Bloc,0,35
+02689,Agent,INDUS,Spécialiste Assurance Qualité,0,35
+02737,Agent,INDUS,Spécialiste Assurance Qualité,0,35
+02550,Agent,INDUS,Analyste Junior,0,35
+20040,Agent,FOE,Spécialiste des grands comptes,0,35
+02742,Agent,GA,Comptable,0,35
+02698,Agent,INDUS,Spécialiste Contrôle Qualité,0,35
+02745,Agent,INDUS,Responsable Maintenance et Ingénierie,0,35
+20038,Agent,FOE,Délégué Médical,0,35
+02666,Agent,INDUS,Pharmacien Chargé des Opérations de Production,0,35
+02749,Agent,RD,Medical Information and Pharmacovigilance Manager,0,35
+02750,Agent,FOE,Superviseur Médical,0,35
+20037,Agent,FOE,Superviseur Médical,0,35
+02512,Agent,FOE,Visiteur Médical,0,35
+20035,Agent,FOE,Visiteur Médical,0,35
+02462,Agent,FOE,Visiteur Pharmaceutique,0,35
+02537,Agent,FOE,Délégué Médical,0,35
+01850,Agent,FOE,Visiteur Médical,0,35
+02223,Agent,FOE,Spécialiste des grands comptes,0,35
+00669,Agent,FOE,Spécialiste des grands comptes,0,35
+01138,Agent,FOE,Visiteur Pharmaceutique,0,35
+02139,Agent,FOE,Visiteur Médical,0,35
+02464,Agent,FOE,Délégué Médical,0,35
+01862,Agent,INDUS,Magasinier (Mp/Ace),0,35
+02608,Agent,FOE,Visiteur Pharmaceutique,0,35
+02483,Agent,FOE,Visiteur Médical,0,35
+01090,Agent,INDUS,Controleur à la Réception(Mp/Ac) et en Cours de Production(Psf/Pf),0,35
+01123,Agent,RD,Packaging et Graphic Designer,0,35
+02577,Agent,FOE,Visiteur Médical,0,35
+01954,Agent,FOE,Visiteur Pharmaceutique,0,35
+01209,Agent,INDUS,Technicien Maintenance Utilites,0,35
+01452,Agent,INDUS,Opérateur de Production,0,35
+01470,Agent,SHO,Chef de Produits,0,35
+01525,Agent,GA,Administrateur Facturation Clients Senior,0,35
+01590,Agent,INDUS,Conducteur Machine,0,35
+01675,Agent,INDUS,Opérateur de Production,0,35
+01731,Agent,INDUS,Opérateur de Production,0,35
+01754,Agent,INDUS,Contrôleur à la Réception,0,35
+01748,Agent,INDUS,Opérateur de Production,0,35
+01798,Agent,INDUS,"Responsable Achat, Approvisionment et Transit",0,35
+02161,Agent,FOE,Délégué Médical,0,35
+20029,Agent,FOE,Spécialiste des grands comptes,0,35
+01869,Agent,INDUS,Responsable Microbiologie Et Contrôles à la Réception,0,35
+20020,Agent,FOE,Visiteur Médical,0,35
+02294,Agent,FOE,Délégué Médical,0,35
+01915,Agent,INDUS,Technicien de Stabilité,0,35
+02634,Agent,FOE,Visiteur Médical,0,35
+20023,Agent,FOE,Délégué Médical,0,35
+02575,Agent,FOE,Visiteur Médical,0,35
+02475,Agent,FOE,Visiteur Médical,0,35
+20022,Agent,FOE,Délégué Médical,0,35
+02246,Agent,INDUS,Chef de Bloc,0,35
+01679,Agent,INDUS,Opérateur de Production,0,35
+01116,Agent,INDUS,Opérateur de Production,0,35
+02293,Agent,SHO,Data Support Analyste,0,35
+02300,Agent,INDUS,"Responsable Qualité, hygiène, sécurité et environnement",0,35
+20031,Agent,FOE,Superviseur Médical,0,35
+02339,Agent,RD,Chef de Projet Junior,0,35
+02350,Agent,RD,Chef de Projet Junior,0,35
+02603,Agent,FOE,Visiteur Médical,0,35
+02367,Agent,INDUS,Opérateur de Production,0,35
+02370,Agent,INDUS,Pharmacien Contrôle Qualité et Responsable Stabilité,0,35
+02460,Agent,INDUS,Chef de Bloc,0,35
+20019,Agent,FOE,Visiteur Médical,0,35
+02606,Agent,FOE,Visiteur Médical,0,35
+02531,Agent,FOE,Visiteur Pharmaceutique,0,35
+02533,Agent,FOE,Visiteur Médical,0,35
+01939,Agent,FOE,Visiteur Médical,0,35
+00825,Agent,Direction National Sales and Marketing,Superviseur Commerciale,0,35
+02545,Agent,FOE,Délégué Médical,0,35
+02151,Agent,INDUS,Chef de Bloc,0,35
+02583,Agent,INDUS,Spécialiste Amélioration Continue,0,35
+02625,Agent,FOE,Visiteur Pharmaceutique,0,35
+02620,Agent,GA,Standardiste et Bureau d'Ordre,0,35
+02622,Agent,RD,Analyste Developpement,0,35
+02638,Agent,FOE,Délégué Médical,0,35
+02658,Agent,GA,Marketing Coordinator,0,35
+02856,Agent,INDUS,Pharmacienne Chargée Contrôle Qualité,0,35
+02857,Agent,SHO,FIELD FORCE MANAGER,0,35
+02798,Agent,FOE,Délégué Médical,0,35
+02800,Agent,FOE,Visiteur Pharmaceutique,0,35
+02801,Agent,SHO,CRM Specialist,0,35
+02785,Agent,RD,Spécialiste en Technologie Pharmaceutique,0,35
+02790,Agent,INDUS,Acheteur Junior,0,35
+02806,Agent,FOE,Agent,0,35
+02830,Agent,SHO,Data Support Analyste,0,35
+02837,Agent,INDUS,Opératrice d'Hygiene,0,35
+02757,Agent,FOE,Délégué Médical,0,35
+02788,Agent,FOE,Délégué Médical,0,35
+02838,Agent,INDUS,Analyste Contrôle Qualité,0,35
+02844,Agent,INDUS,Chef de Bloc,0,35
+02848,Agent,GA,IT Development Associate,0,35
+02852,Agent,GA,PEOPLE DEVELOPMENT SPECIALIST,0,35
+00283,Agent,GA,Agent,0,35
+02115,Agent,FOE,Agent,0,35
+02726,Agent,INDUS,Agent,0,35
+02755,Agent,FOE,Agent,0,35
+02758,Agent,FOE,Agent,0,35
+02761,Agent,FOE,Agent,0,35
+02779,Agent,INDUS,Agent,0,35
+02781,Agent,INDUS,Agent,0,35
+02797,Agent,RD,Agent,0,35
+02799,Agent,RD,Agent,0,35
+02859,Agent,FOE,Agent,0,35
+20041,Agent,FOE,Agent,0,35
+03036,Agent,Direction Industrielle,Opérateur de Production,0,35
+03045,Agent,Direction Management Qualité,Analyste Contrôle Qualité,0,35
+02422,Agent,Direction Industrielle,Agent de Sécurité,0,35
+03040,Agent,Direction Industrielle,Technicien Maintenance Process,0,35
+00011,Agent,INDUS,Agent,0,35
+00134,Agent,INDUS,Agent,0,35
+00236,Agent,FOE,Agent,0,35
+00265,Agent,INDUS,Agent,0,35
+00492,Agent,INDUS,Agent,0,35
+00836,Agent,FOE,Agent,0,35
+01055,Agent,GA,Agent,0,35
+01142,Agent,FOE,Agent,0,35
+01176,Agent,INDUS,Agent,0,35
+01377,Agent,INDUS,Agent,0,35
+01393,Agent,INDUS,Agent,0,35
+01484,Agent,INDUS,Agent,0,35
+01486,Agent,INDUS,Agent,0,35
+01488,Agent,INDUS,Agent,0,35
+01545,Agent,INDUS,Agent,0,35
+01576,Agent,INDUS,Agent,0,35
+01628,Agent,INDUS,Agent,0,35
+01769,Agent,RD,Agent,0,35
+01803,Agent,INDUS,Agent,0,35
+01860,Agent,GA,Agent,0,35
+01896,Agent,FOE,Agent,0,35
+01986,Agent,FOE,Agent,0,35
+02072,Agent,INDUS,Agent,0,35
+02143,Agent,FOE,Agent,0,35
+02150,Agent,FOE,Agent,0,35
+02188,Agent,INDUS,Agent,0,35
+02204,Agent,INDUS,Agent,0,35
+02275,Agent,INDUS,Agent,0,35
+02297,Agent,GA,SPECIALISTE ERP,0,35
+02326,Agent,SHO,Agent,0,35
+02338,Agent,INDUS,Agent,0,35
+02372,Agent,INDUS,Agent,0,35
+02403,Agent,INDUS,Agent,0,35
+02432,Agent,INDUS,Agent,0,35
+02479,Agent,INDUS,Agent,0,35
+02491,Agent,INDUS,Agent,0,35
+02506,Agent,FOE,Agent,0,35
+02516,Agent,GA,Agent,0,35
+02556,Agent,INDUS,Agent,0,35
+02562,Agent,INDUS,Agent,0,35
+02578,Agent,SHO,Agent,0,35
+02594,Agent,FOE,Agent,0,35
+02602,Agent,INDUS,Agent,0,35
+02605,Agent,FOE,Agent,0,35
+02610,Agent,FOE,Agent,0,35
+02611,Agent,FOE,Agent,0,35
+02613,Agent,INDUS,Agent,0,35
+02626,Agent,FOE,Agent,0,35
+02632,Agent,FOE,Agent,0,35
+02636,Agent,FOE,Agent,0,35
+02637,Agent,SHO,Agent,0,35
+02645,Agent,SHO,Agent,0,35
+02650,Agent,INDUS,Agent,0,35
+02651,Agent,INDUS,Agent,0,35
+02654,Agent,FOE,Agent,0,35
+02663,Agent,RD,Agent,0,35
+02667,Agent,INDUS,Agent,0,35
+02668,Agent,INDUS,Agent,0,35
+02671,Agent,FOE,Agent,0,35
+02672,Agent,FOE,Agent,0,35
+02684,Agent,INDUS,Agent,0,35
+02690,Agent,GA,Agent,0,35
+02692,Agent,INDUS,Agent,0,35
+02695,Agent,FOE,Agent,0,35
+02702,Agent,INDUS,Agent,0,35
+02704,Agent,INDUS,Agent,0,35
+02705,Agent,INDUS,Agent,0,35
+02707,Agent,FOE,Agent,0,35
+02709,Agent,FOE,Agent,0,35
+02722,Agent,INDUS,Agent,0,35
+02736,Agent,FOE,Agent,0,35
+02743,Agent,INDUS,Agent,0,35
+02744,Agent,INDUS,Agent,0,35
+20001,Agent,FOE,Agent,0,35
+20021,Agent,FOE,Agent,0,35
+20027,Agent,FOE,Agent,0,35
+20028,Agent,FOE,Agent,0,35
+02869,Agent,FOE,Agent,0,35
+02870,Agent,FOE,Agent,0,35
+02872,Agent,INDUS,Agent,0,35
+02876,Agent,INDUS,Agent,0,35
+02891,Agent,INDUS,Agent,0,35
+02894,Agent,FOE,Agent,0,35
+02895,Agent,INDUS,Agent,0,35
+02896,Agent,INDUS,Agent,0,35
+02897,Agent,FOE,Agent,0,35
+02905,Agent,INDUS,Agent,0,35
+02914,Agent,INDUS,Agent,0,35
+02924,Agent,FOE,Agent,0,35
+02945,Agent,FOE,Field Force Manager,0,35
+02946,Agent,FOE,Visiteur Médical,0,35
+02947,Agent,FOE,Visiteur Médical,0,35
+02948,Agent,FOE,Agent,0,35
+02949,Agent,FOE,Visiteur Médical,0,35
+02950,Agent,FOE,Agent,0,35
+02951,Agent,FOE,Visiteur Médical,0,35
+20048,Agent,FOE,Agent,0,35
+03041,Agent,Direction de Logistique,DATA ENGINEER,0,35
+03067,Agent,Direction Industrielle,Opérateur de Production,0,35
+00000,Agent,NC,Agent,0,35
+NB INDUS RESIGNATIONS/DISMISSALSS 2025,Agent,NC,Agent,0,35
+INDUS,Agent,NC,Agent,0,35
+01121,Agent,Direction Industrielle,Opérateur de Production,0,35
+02042,Agent,Direction Industrielle,Agent de Sécurité,0,35
+02496,Agent,Direction Industrielle,Agent de Sécurité,0,35
+02629,Agent,Direction Management Qualité,Analyste Contrôle Qualité,0,35
+02675,Agent,Direction Industrielle,Agent de Sécurité,0,35
+02953,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02954,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02955,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02956,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02957,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+02958,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02959,Agent,Direction Management Qualité,Spécialiste Assurance Qualité,0,35
+02961,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02968,Agent,Direction Contrôle de Gestion,Data Scientist,0,35
+02969,Agent,Direction National Sales and Marketing,Chef de Produit,0,35
+02971,Agent,Direction Contrôle de Gestion,BI Specialist,0,35
+02975,Agent,Direction National Sales and Marketing,Spécialiste des grands comptes,0,35
+02976,Agent,Direction des Systèmes d'Information,BI & DATAWAREHOUSE MANAGER,0,35
+02979,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02985,Agent,Direction Industrielle,Opérateur de Production,0,35
+02986,Agent,Direction National Sales and Marketing,Visiteur Commercial,0,35
+02990,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02991,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02992,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02993,Agent,Direction National Sales and Marketing,Visiteur Commercial,0,35
+02994,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+02995,Agent,Direction National Sales and Marketing,Chef de Produit,0,35
+02996,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03004,Agent,Direction Management Qualité,PHARMACIEN CHARGE CONTROLE QUALITE,0,35
+03006,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03020,Agent,Direction Industrielle,Pharmacien Production,0,35
+03022,Agent,Direction National Sales and Marketing,CHC PRODUCT & DIGITAL MANAGER,0,35
+03023,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03028,Agent,Direction Industrielle,Agent de Sécurité,0,35
+03029,Agent,Direction Industrielle,Agent de Sécurité,0,35
+03030,Agent,Direction Industrielle,Agent de Sécurité,0,35
+03034,Agent,Direction Industrielle,Data Scientist,0,35
+03037,Agent,Direction Industrielle,Agent de Sécurité,0,35
+03039,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03043,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+03044,Agent,Direction Industrielle,Opérateur de Production,0,35
+03046,Agent,Direction Management Qualité,Spécialiste Assurance Qualité,0,35
+03048,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03050,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+03051,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03052,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03053,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+03055,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03056,Agent,Direction des Ressources Humaines,LEARNING & DEVELOPMENT SPECIALIST,0,35
+03058,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35
+03066,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+03068,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+03069,Agent,Direction Industrielle,Opérateur de Production,0,35
+03070,Agent,Direction de Développement,Spécialiste en Technologie Pharmaceutique,0,35
+03073,Agent,Direction National Sales and Marketing,Visiteur Commercial,0,35
+03074,Agent,Direction National Sales and Marketing,Visiteur Commercial,0,35
+03076,Agent,Direction National Sales and Marketing,Visiteur Commercial,0,35
+03079,Agent,Direction de Logistique,DATA ENGINEER,0,35
+20055,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+20056,Agent,Direction National Sales and Marketing,Délégué Médical,0,35
+02970,Agent,Direction de Développement,Analyste Developpement,0,35
+20057,Agent,Direction National Sales and Marketing,Visiteur Médical,0,35

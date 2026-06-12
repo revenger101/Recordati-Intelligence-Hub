@@ -1,0 +1,61 @@
+========================================================================
+             OPALIA HR : GUIDE TECHNIQUE DU DASHBOARD ET DE L'IA
+========================================================================
+
+Ce document détaille le fonctionnement du système OpaliaHR, ses indicateurs
+stratégiques et son moteur d'intelligence artificielle Nexus.
+
+1. STRUCTURE DU DASHBOARD (COMMAND CENTER)
+------------------------------------------
+Le tableau de bord est structuré autour de deux indicateurs de population :
+
+A. EFFECTIF ACTIF (2026) : 355 Collaborateurs
+   - Source de vérité : Fichier "ETAT PERSO 2026.csv".
+   - Utilisation : Calcul de la masse salariale, planning, gestion des congés.
+   - C'est votre population réelle présente aujourd'hui.
+
+B. MÉMOIRE GLOBALE (ARCHIVES) : 975 Profils
+   - Source : Fusion des fichiers historiques (2022, 2023, 2024, 2026).
+   - Utilisation : Analyse statistique et entraînement de l'IA.
+   - Ce chiffre inclut les anciens employés pour permettre à l'IA de
+     comprendre les motifs de départ (Turnover).
+
+2. L'INTELLIGENCE ARTIFICIELLE (NEXUS IA)
+-----------------------------------------
+L'IA d'OpaliaHR utilise un modèle de "Forêt Aléatoire" (Random Forest).
+
+A. Fonctionnement des prédictions :
+   L'IA ne se limite pas au présent. Elle analyse l'historique des 975
+   profils pour détecter des corrélations critiques :
+   - Un employé dont les absences augmentent de manière anormale.
+   - Un retard de croissance salariale par rapport à la moyenne du service.
+   - Un seuil d'ancienneté critique atteint (typiquement entre 2 et 4 ans).
+
+B. Résultats des prédictions :
+   - Niveau de Risque : Critique, Haut, Modéré ou Faible.
+   - Facteurs de Risque : L'IA précise le déclencheur (salaire, absentéisme,
+     ou ancienneté).
+
+3. RÉSILIENCE ET DONNÉES (SNAPSHOTS)
+------------------------------------
+Pour garantir la disponibilité du dashboard, même si le serveur
+PostgreSQL est indisponible :
+- Un fichier "data_snapshot.csv" est généré automatiquement.
+- Ce fichier contient la dernière consolidation propre de vos données.
+- Le dashboard bascule automatiquement dessus en cas de panne.
+
+4. MOTEUR DE RECOMMANDATIONS STRATÉGIQUES (NEW v6.2-S)
+-----------------------------------------------------------
+Depuis la version v6.2-S, OpaliaHR ne se contente plus de prédire, il propose.
+- Le moteur analyse les "Clusters" de risque par direction.
+- Si le moteur détecte une tendance (ex: Burnout lié aux HS en Production), il génère automatiquement un plan d'action (Audit de charge).
+- Les recommandations sont persistées et visibles directement sur l'onglet "Predictive AI".
+
+5. CONSEILS POUR LA PRÉCISION
+-----------------------------
+- Tenez le fichier "ETAT PERSO 2026.csv" à jour.
+- Importez régulièrement les relevés d'absences et d'heures supplémentaires (HS) via le Nexus ETL.
+
+------------------------------------------------------------------------
+OpaliaHR - Intelligence Artificielle et Pilotage RH Industriel - 2026
+------------------------------------------------------------------------

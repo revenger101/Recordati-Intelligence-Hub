@@ -1,0 +1,26 @@
+{
+  "name": "rh-portail-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static HR portal + optional static server for n8n webhooks",
+  "scripts": {
+    "start": "node server.js",
+    "import-n8n": "docker exec -it rh-n8n n8n import:workflow --input=/home/node/n8n_local/workflow-rh-architecture.json",
+    "run-etl": "python ../industrialized_etl.py"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^4.21.0",
+    "express-jwt": "^8.5.1",
+    "express-rate-limit": "^8.3.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.5",
+    "pg": "^8.20.0"
+  }
+}

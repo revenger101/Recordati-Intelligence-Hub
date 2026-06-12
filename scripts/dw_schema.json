@@ -1,0 +1,18 @@
+{
+  "Dim_Employee": {
+    "required_columns": ["matricule", "full_name", "gender", "department", "function", "site", "age", "employment_status"],
+    "description": "Master employee records. 'matricule' is the unique identifier."
+  },
+  "Fact_Absence": {
+    "required_columns": ["date_fk", "employee_fk", "duration_days"],
+    "description": "Records of employee absences. Requires mapping matricule to employee_sk."
+  },
+  "Fact_Turnover": {
+    "required_columns": ["date_fk", "employee_fk", "turnover_type", "reason"],
+    "description": "Records of employee departures."
+  },
+  "Fact_Employee_Snapshot": {
+    "required_columns": ["date_fk", "employee_fk", "salary", "performance_score"],
+    "description": "Monthly snapshots of employee status and payroll."
+  }
+}

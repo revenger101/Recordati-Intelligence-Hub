@@ -1,0 +1,91 @@
+id,date_fk,employee_fk,dept_fk,reason,turnover_type
+1.0,19920531,337,1.0,volontary resignation,Voluntary
+2.0,19900730,328,7.0,volontary resignation,Voluntary
+3.0,19871019,68,6.0,volontary resignation,Voluntary
+4.0,19860408,152,4.0,agreement on contract resolution,Involuntary
+5.0,19730101,136,6.0,Death,Involuntary
+6.0,20250120,17,3.0,agreement on contract resolution,Involuntary
+7.0,20250213,198,11.0,Retirement,Involuntary
+8.0,20250220,65,15.0,volontary resignation,Voluntary
+9.0,20250225,214,1.0,volontary resignation,Voluntary
+10.0,20250225,344,1.0,volontary resignation,Voluntary
+11.0,20250221,248,4.0,agreement on contract resolution,Involuntary
+12.0,20250404,341,1.0,volontary resignation,Voluntary
+13.0,20250422,59,9.0,volontary resignation,Voluntary
+14.0,20250404,113,1.0,agreement on contract resolution,Involuntary
+15.0,20250523,22,7.0,volontary resignation,Voluntary
+16.0,20250620,50,1.0,volontary resignation,Voluntary
+17.0,20250620,320,2.0,volontary resignation,Voluntary
+18.0,20250718,352,2.0,volontary resignation,Voluntary
+19.0,20250731,79,7.0,volontary resignation,Voluntary
+20.0,20250731,192,1.0,volontary resignation,Voluntary
+21.0,20250731,12,1.0,volontary resignation,Voluntary
+22.0,20250915,217,1.0,volontary resignation,Voluntary
+23.0,20250916,146,1.0,agreement on contract resolution,Involuntary
+24.0,20250926,54,1.0,volontary resignation,Voluntary
+25.0,20251215,224,1.0,volontary resignation,Voluntary
+26.0,20251215,319,1.0,Dismissal for serious misconduct,Involuntary
+27.0,20251216,67,1.0,volontary resignation,Voluntary
+28.0,20251220,5,4.0,expiry of temporary contract,Involuntary
+,8/26/2026,HAMDI BEDOUI,,volontary resignation,
+,TITULAIRE,ABDELI GHADA,,volontary resignation,
+,TITULAIRE,ZIDANI EMINA,,volontary resignation,
+,TITULAIRE,ELMKADMINI MED (MUTATED TO CQ)/GARCI BILEL,,volontary resignation,
+,TITULAIRE,MRABET MAROUEN,,volontary resignation,
+,TITULAIRE,OK,,agreement on contract resolution,
+,7/18/2026,,,volontary resignation,
+,TITULAIRE,OK,,Death,
+,,,,,
+,1/8/2025,,,volontary resignation,
+,1/20/2025,,,agreement on contract resolution,
+,1/29/2025,,,volontary resignation,
+,1/30/2025,,,Dismissal after an inconclusive test period,
+,2/10/2025,,,volontary resignation,
+,2/13/2025,,,Retirement,
+,2/20/2025,,,volontary resignation,
+,2/25/2025,,,volontary resignation,
+,2/21/2025,,,agreement on contract resolution,
+,3/3/2025,,,expiry of temporary contract,
+,3/28/2025,,,volontary resignation,
+,3/20/2025,,,Dismissal after an inconclusive test period,
+,4/4/2025,,,volontary resignation,
+,4/11/2025,,,Dismissal after an inconclusive test period,
+,4/22/2025,,,volontary resignation,
+,4/20/2025,,,expiry of temporary contract,
+,4/4/2025,,,agreement on contract resolution,
+,4/23/2025,,,expiry of temporary contract,
+,5/5/2025,,,volontary resignation,
+,5/1/2025,,,volontary resignation,
+,5/23/2025,,,volontary resignation,
+,5/28/2025,,,expiry of temporary contract,
+,5/20/2025,,,volontary resignation,
+,6/16/2025,,,Dismissal after an inconclusive test period,
+,6/20/2025,,,volontary resignation,
+,6/27/2025,,,volontary resignation,
+,7/8/2025,,,Dismissal after an inconclusive test period,
+,7/16/2025,,,volontary resignation,
+,7/18/2025,,,volontary resignation,
+,6/30/2025,,,Dismissal after an inconclusive test period,
+,7/30/2025,,,volontary resignation,
+,7/31/2025,,,volontary resignation,
+,8/1/2025,,,expiry of temporary contract,
+,8/5/2025,,,Dismissal after an inconclusive test period,
+,8/29/2025,,,expiry of temporary contract,
+,8/28/2025,,,Dismissal after an inconclusive test period,
+,9/11/2025,,,agreement on contract resolution,
+,9/16/2025,,,volontary resignation,
+,9/15/2025,,,volontary resignation,
+,9/16/2025,,,agreement on contract resolution,
+,9/26/2025,,,volontary resignation,
+,10/17/2025,,,volontary resignation,
+,10/28/2025,,,volontary resignation,
+,11/2/2025,,,volontary resignation,
+,11/17/2025,,,volontary resignation,
+,11/20/2025,,,volontary resignation,
+,11/20/2025,,,agreement on contract resolution,
+,12/1/2025,,,expiry of temporary contract,
+,12/8/2025,,,volontary resignation,
+,12/15/2025,,,volontary resignation,
+,12/15/2025,,,Dismissal for serious misconduct,
+,12/16/2025,,,volontary resignation,
+,12/20/2025,,,expiry of temporary contract,

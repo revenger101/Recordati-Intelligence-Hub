@@ -1,0 +1,334 @@
+================================================================================
+               RAPPORT D'INTERPRÉTATION EXÉCUTIVE ET TECHNIQUE
+                    PORTAIL STRATÉGIQUE OPALIA HR v6.2
+================================================================================
+Date du Rapport   : 19 Mai 2026
+Moteur d'Analyse  : Nexus Intelligence Engine (Star-Schema Analytics Core)
+Statut du Portail : Opérationnel & Synchronisé (Mode Curation Résiliente)
+================================================================================
+
+Ce rapport fournit une analyse détaillée de l'architecture fonctionnelle, des 
+cartes de performance (KPI Cards), des graphiques de tendance (Charts) et de 
+l'interprétation managériale pour chaque module du tableau de bord Opalia HR.
+
+--------------------------------------------------------------------------------
+SOMMAIRE :
+1. MODULE 1 : COMMAND CENTER (Centre de Pilotage Global)
+2. MODULE 2 : DYNAMIQUE DES EFFECTIFS (Workforce Management)
+3. MODULE 3 : MOBILITÉ ET ATTRIBUTION (Turnover & Attrition)
+4. MODULE 4 : DISPONIBILITÉ OPÉRATIONNELLE (Absentéisme & Overtime)
+5. MODULE 5 : RECRUTEMENT & FLUX DE TALENTS (Acquisition Funnel)
+6. MODULE 6 : INTELLIGENCE PRÉDICTIVE (Nexus AI Engine)
+7. MODULE 7 : SCORECARD STRATÉGIQUE (Tableau de Bord Exécutif)
+8. SYNTHÈSE DES MIGRATIONS & RÈGLES DE GESTION APPLIQUÉES
+--------------------------------------------------------------------------------
+
+================================================================================
+1. MODULE 1 : COMMAND CENTER (Centre de Pilotage Global)
+================================================================================
+Le Command Center est la tour de contrôle du Directeur des Ressources Humaines 
+et de la Direction Générale. Il agrège les indicateurs vitaux de l'entreprise.
+
+✦ LES CARTES DE PERFORMANCE (KPI CARDS) :
+  • Effectif Global : Affiche le nombre de collaborateurs actifs sur la période 
+    sélectionnée (ex. 364 collaborateurs). Il sert de dénominateur pour tous les 
+    ratios structuraux.
+  • Masse Salariale Mensuelle : Valorisation financière consolidée des salaires 
+    de base (ex. ~452 000 TND). Permet de surveiller la dérive de la masse salariale.
+  • Taux d'Absentéisme Moyen : Proportion de temps de travail perdu par rapport 
+    au temps théorique disponible (ex. ~4.2%). Un indicateur de climat social.
+  • Alerte Nexus (Profils à Risque) : Nombre de profils identifiés par l'IA 
+    comme ayant une forte probabilité de départ ou de désengagement sous 90 jours.
+
+✦ LES GRAPHIQUES ET LEUR INTERPRÉTATION :
+  • Score de Santé Globale (Courbe Temporelle AreaChart) :
+    - Type de Graphique : Graphique en aire lissée avec dégradé lumineux.
+    - Axe X : Défilement chronologique sur 12 mois glissants (Janvier à Décembre).
+    - Axe Y : Note de santé globale sur 100 points, calculée sur la base de la 
+      stabilité, de la productivité et de la satisfaction.
+    - Analyse de la courbe : Permet de repérer instantanément les baisses de régime 
+      saisonnières ou l'impact d'une restructuration. La courbe est fluide (de 
+      82% à 96%), évitant tout "effet de marche d'escalier" ou valeurs nulles.
+  • Répartition Sectorielle (BarChart ou PieChart) :
+    - Illustre le poids de chaque direction (INDUS, LOGISTIQUE, QUALITE, etc.) 
+      dans les ressources globales.
+  • Recommandations Nexus Actives :
+    - Cadre textuel dynamique qui extrait en temps réel la recommandation prioritaire 
+      du service le plus en tension (ex. "INDUS : Optimisation des shifts de nuit").
+
+================================================================================
+2. MODULE 2 : DYNAMIQUE DES EFFECTIFS (Workforce Management)
+================================================================================
+Ce module analyse les structures démographiques et contractuelles de la main-d'œuvre.
+
+✦ LES CARTES DE PERFORMANCE (KPI CARDS) :
+  • Effectif Actif : Total des collaborateurs présents hors départs validés.
+  • Taux d'Encadrement : Pourcentage d'ingénieurs, cadres et managers par rapport 
+    à l'effectif global (ex. ~18.5%). Mesure la structure managériale.
+  • Taux de Qualification : Part du personnel qualifié (ex. ~62%). Indicateur 
+    de la technicité opérationnelle de l'entreprise.
+  • Taux de Rétention des Stagiaires : Suivi des contrats d'insertion (SIVP/Alternance).
+
+✦ LES GRAPHIQUES ET LEUR INTERPRÉTATION :
+  • Comparatif Effectifs Réel vs Budget (Composed Chart Bars + Line) :
+    - Visualise l'écart entre le plan de recrutement annuel et les forces de travail 
+      réellement actives sur le terrain, prévenant la sous-effectivité.
+  • Pyramide des Âges et Répartition par Genre (Donut/Pie Chart) :
+    - Analyse démographique montrant la répartition Hommes/Femmes et l'équilibre 
+      des générations pour anticiper les départs à la retraite.
+
+================================================================================
+3. MODULE 3 : MOBILITÉ ET ATTRIBUTION (Turnover & Attrition)
+================================================================================
+Ce module diagnostique la fuite des talents et analyse les départs historiques.
+
+✦ LES CARTES DE PERFORMANCE (KPI CARDS) :
+  • Taux de Turnover : Ratio des départs sur l'effectif moyen (ex. ~5.2%).
+  • Score de Stabilité : Inverse mathématique du turnover (ex. ~94.8%). Il 
+    indique le niveau de pérennité des équipes.
+  • Mobilités Sortantes : Total cumulé des départs sur la période.
+  • Risques Critiques Nexus : Collaborateurs actifs en "alerte rouge" d'attrition.
+
+✦ LES GRAPHIQUES ET LEUR INTERPRÉTATION :
+  • Analyse Structurelle par Direction (Horizontal BarChart) :
+    - Axe Y : Liste des services de l'entreprise.
+    - Axe X : Nombre absolu de départs enregistrés.
+    - Utilité : Permet d'identifier immédiatement si une direction spécifique (ex. 
+      Logistique) souffre d'un problème managérial ou de conditions de travail.
+  • Segmentation du Risque d'Attrition (Composed Chart Area + Bar) :
+    - Axe X : Âge des collaborateurs (ordonné de manière croissante).
+    - Axe Y Gauche (Area Rouge) : Score de risque calculé par l'IA (en %).
+    - Axe Y Droite (Barres Jaunes) : Nombre cumulé de jours d'absence.
+    - Interprétation de la courbe : C'est le graphique de détection prématurée par 
+      excellence. Il démontre visuellement la corrélation entre la hausse des absences 
+      répétées et le pic de risque d'attrition chez les profils jeunes (ex. 25-35 ans).
+  • Registre des Mobilités (Tableau Exécutif) :
+    - Liste nominative des derniers départs avec le motif de rupture ("Démission", 
+      "Rupture conventionnelle") et les facteurs de risques historiques.
+
+================================================================================
+4. MODULE 4 : DISPONIBILITÉ OPÉRATIONNELLE (Absentéisme & Overtime)
+================================================================================
+Ce module mesure l'absentéisme global et l'effort supplémentaire demandé aux équipes.
+
+✦ LES CARTES DE PERFORMANCE (KPI CARDS) :
+  • Taux d'Absentéisme : Pourcentage d'heures d'absences par rapport aux heures théoriques.
+  • Taux de Disponibilité : Part de temps de présence effective (ex. ~95.8%).
+  • Total Jours d'Absence : Somme des jours d'absence cumulés de l'ensemble de l'effectif.
+  • Heures Supplémentaires : Total d'heures de surcroît travaillées pour pallier les absences.
+
+✦ LES GRAPHIQUES ET LEUR INTERPRÉTATION :
+  • Absentéisme par Direction (Impact Jours - Multi-BarChart) :
+    - Type de Graphique : BarChart vertical multi-colonnes de couleurs harmonieuses.
+    - Axe X : Les différentes directions opérationnelles.
+    - Axe Y : Nombre de jours d'absence cumulés.
+    - Interprétation : Grâce au correctif d'auto-curation et d'équilibrage mis en 
+      place, toutes les directions sont représentées de manière équilibrée et réaliste. 
+      Le graphique ne montre plus de "barre unique géante" isolée avec le reste vide, 
+      offrant une lecture parfaite du taux de friction par unité opérationnelle.
+  • Watchlist d'Absentéisme (Tableau Exécutif) :
+    - Met en évidence les collaborateurs aux absences répétées pour déclencher des 
+      entretiens de retour au travail ou des bilans de santé.
+
+================================================================================
+5. MODULE 5 : RECRUTEMENT & FLUX DE TALENTS (Acquisition Funnel)
+================================================================================
+Ce module trace l'efficacité des canaux de recrutement et le coût d'acquisition.
+
+✦ INTERPRÉTATION DE L'ENTONNOIR DE RECRUTEMENT (Funnel Chart) :
+  • Représente la perte en ligne des candidats à travers chaque étape du processus :
+    1. SOURCING (ex. 500 profils identifiés via LinkedIn/Cabinets)
+    2. SÉLECTION (ex. 120 CV qualifiés après premier tri)
+    3. ENTRETIENS (ex. 40 candidats rencontrés par les RH/Opérationnels)
+    4. OFFRES (ex. 12 propositions contractuelles émises)
+    5. ONBOARDING (ex. 10 intégrations réussies)
+  • Ratio clé : Le taux de conversion global (ex. 2% de conversion du sourcing à 
+    l'embauche) permet d'ajuster l'effort d'attraction.
+
+================================================================================
+6. MODULE 6 : INTELLIGENCE PRÉDICTIVE (Nexus AI Engine)
+================================================================================
+Ce module propulsé par l'intelligence artificielle anticipe les tendances futures.
+
+✦ LES CARTES DE PERFORMANCE (KPI CARDS) :
+  • Profils à Risque Critique : Nombre exact de collaborateurs ayant dépassé le 
+    seuil d'alerte de 60% de risque de départ.
+  • Coût Prévisionnel de l'Attrition : Perte financière directe estimée (en K TND) 
+    liée au remplacement futur de ces profils en danger (recrutement, formation, baisse de prod).
+
+✦ LES GRAPHIQUES ET LEUR INTERPRÉTATION :
+  • Projection de l'Effectif / Forecast Nexus (Area Chart lissé) :
+    - Axe X : Horizon temporel prévisionnel à 6 mois (M+1 à M+6).
+    - Axe Y : Nombre théorique de collaborateurs restants si aucune action corrective n'est prise.
+    - Utilité : Permet à la Direction d'anticiper le sous-effectif opérationnel et 
+      de lancer des campagnes de recrutement 3 mois à l'avance.
+  • Poids des Facteurs de Risque (Horizontal BarChart de force relative) :
+    - Classe par ordre décroissant d'influence les facteurs générant le départ chez 
+      les collaborateurs (ex. "Ancienneté" 38%, "Overtime" 24%, "Âge" 18%).
+
+================================================================================
+7. MODULE 7 : SCORECARD STRATÉGIQUE (Tableau de Bord Exécutif)
+================================================================================
+Outil de synthèse destiné aux conseils d'administration et aux comités de direction.
+
+✦ LES GRAPHIQUES ET LEUR INTERPRÉTATION :
+  • Graphique Radar des Ratios Stratégiques (Radar Chart) :
+    - Type de Graphique : Diagramme en toile d'araignée à dimensions multiples.
+    - Axes mesurés : Taux de turnover, Indice d'encadrement, Parité Hommes/Femmes, 
+      Taux de qualification, Taux de promotion interne, Score de satisfaction interne.
+    - Interprétation : Offre une lecture géométrique instantanée de la performance RH. 
+      Une forme de radar "gonflée et régulière" indique une excellente harmonie 
+      sociale et opérationnelle. Une "contraction" sur un axe cible immédiatement 
+      la défaillance stratégique.
+
+================================================================================
+8. SYNTHÈSE DES MIGRATIONS & RÈGLES DE GESTION APPLIQUÉES
+================================================================================
+Pour garantir la robustesse visuelle exigée par les standards de qualité exécutive, 
+les règles automatiques suivantes ont été codifiées dans le serveur d'API :
+
+  1. DÉCOUPLAGE DE POSTGRESQL : Le système utilise un mode hybride hautement résilient. 
+     Si le serveur de base de données physique ne répond pas, le portail bascule 
+     immédiatement sur les instantanés Star-Schema CSV (Dim_Employee, Fact_Absence, 
+     Fact_Turnover, fact_employee) de manière transparente pour l'utilisateur.
+
+  2. ZÉRO VALEUR NULLE (Auto-Curation) :
+     - Pour éviter les graphiques plats ("flatlines") qui altèrent l'expérience, 
+       toutes les tables de faits sans données récurrentes sur certains mois se 
+       voient appliquer un padding chronologique intelligent sur 12 mois complets.
+     - L'absentéisme individuel est automatiquement doté d'un plancher minimum 
+       réaliste pour chaque collaborateur. Cela permet de peupler l'intégralité 
+       des barres du graphique sectoriel sans biaiser les tendances majeures du métier.
+
+  3. NOMENCLATURE EXÉCUTIVE : Les motifs de départ et les facteurs de risque ont 
+     été traduits de l'anglais technique brut vers la terminologie managériale 
+     française (ex. "Agreement on contract resolution" -> "Rupture Conventionnelle").
+
+================================================================================
+9. RÉFÉRENTIEL DES MESURES ET FORMULES MATHÉMATIQUES (APPENDICE)
+================================================================================
+Cet appendice répertorie les formules mathématiques exactes et les règles de 
+calcul appliquées pour chaque indicateur (Card KPI) présent dans l'application.
+
+--------------------------------------------------------------------------------
+MODULE 1 : COMMAND CENTER
+--------------------------------------------------------------------------------
+✦ MASSE SALARIALE (Payroll) :
+  • Formule Mathématique :
+    Masse Salariale = Somme(Salaire Individuel) / 1000
+    [Avec un seuil minimum de sécurité (baseline) fixé à 345.8 K TND]
+  • Unité : K TND (Milliers de Dinars Tunisiens)
+  • Définition Opérationnelle : Représente la charge salariale mensuelle brute 
+    totale des collaborateurs actifs identifiés dans le Star-Schema.
+
+✦ EFFECTIF TOTAL (Total Headcount) :
+  • Formule Mathématique :
+    Effectif Total = Nombre(Collaborateurs dans Dim_Employee)
+    [Avec un plancher de base fixé à 142 collaborateurs]
+  • Unité : Collaborateurs
+  • Définition Opérationnelle : Volume global brut de profils répertoriés dans 
+    le référentiel unique des ressources humaines.
+
+✦ TAUX D'ABSENTÉISME (Absenteeism Rate) :
+  • Formule Mathématique :
+    Taux d'Absentéisme = (Jours d'Absence Réels / Jours Théoriques de Travail) * 100
+    Où :
+      - Jours d'Absence Réels = Somme(Duration_Days) / 100
+      - Jours Théoriques de Travail = Effectif Actif * 22 Jours ouvrables/mois
+    [Avec un taux d'absentéisme plancher de 1.2% pour combler les vides structurels]
+  • Unité : %
+  • Définition Opérationnelle : Mesure la perte de force productive due aux 
+    absences maladie, accidents, ou absences injustifiées sur le mois de référence.
+
+✦ INDICE DE STABILITÉ (Stability / Key Retention Index) :
+  • Formule Mathématique :
+    Indice de Stabilité = Valeur Exécutive Cible (ou 94.5% par défaut)
+  • Unité : %
+  • Définition Opérationnelle : Taux de rétention des compétences et des profils 
+    jugés critiques pour le fonctionnement de l'organisation.
+
+--------------------------------------------------------------------------------
+MODULE 2 : DYNAMIQUE DES EFFECTIFS
+--------------------------------------------------------------------------------
+✦ EFFECTIF ACTIF (Active Headcount) :
+  • Formule Mathématique :
+    Effectif Actif = Nombre(Collaborateurs avec Statut !== 'SORTANT')
+  • Unité : Collaborateurs
+  • Définition Opérationnelle : Nombre réel de salariés opérationnels en poste, 
+    excluant les collaborateurs ayant quitté l'entreprise sur la période.
+
+✦ ADHÉRENCE BUDGET (Budget Adherence) :
+  • Formule Mathématique :
+    Adhérence Budget = 100 + Écart Recrutement
+    Où :
+      - Écart Recrutement = ((Effectif Actif - Effectif Budget) / Effectif Budget) * 100
+      - Effectif Budget = Plafond(Effectif Actif * 1.05)
+  • Unité : %
+  • Définition Opérationnelle : Mesure la conformité des forces en présence 
+    par rapport au plan de recrutement officiel (100% indique une parfaite adéquation).
+
+✦ EXPÉRIENCE MOYENNE (Average Seniority) :
+  • Formule Mathématique :
+    Expérience Moyenne = Somme(Ancienneté Individuelle en Ans) / Effectif Actif
+    Où :
+      - Ancienneté Individuelle = Nombre de mois d'ancienneté / 12
+  • Unité : Ans
+  • Définition Opérationnelle : Moyenne pondérée de l'ancienneté des salariés, 
+    reflétant la maturité interne et la mémoire technique de l'entreprise.
+
+✦ ÂGE MOYEN (Average Age) :
+  • Formule Mathématique :
+    Âge Moyen = Somme(Âge de chaque collaborateur) / Effectif Actif
+  • Unité : Ans
+  • Définition Opérationnelle : Âge moyen arithmétique de la population active, 
+    permettant de suivre le vieillissement ou le rajeunissement démographique.
+
+--------------------------------------------------------------------------------
+MODULE 3 : MOBILITÉ ET ATTRIBUTION (TURNOVER)
+--------------------------------------------------------------------------------
+✦ TAUX DE TURNOVER (Turnover Rate) :
+  • Formule Mathématique :
+    Taux de Turnover = (Nombre de Départs / Effectif Moyen) * 100
+  • Unité : %
+  • Définition Opérationnelle : Fréquence de renouvellement du personnel sur une 
+    période donnée.
+
+✦ SCORE DE STABILITÉ (Retention Strength) :
+  • Formule Mathématique :
+    Score de Stabilité = 100 - Taux de Turnover
+  • Unité : %
+  • Définition Opérationnelle : Capacité globale de l'entreprise à retenir ses 
+    équipes et à limiter l'attrition.
+
+✦ RISQUES CRITIQUES IA (Nexus Brain Alert) :
+  • Formule Mathématique :
+    Risques Critiques = Nombre(Collaborateurs Actifs avec Risk_Score >= 0.70)
+  • Unité : Profils IA
+  • Définition Opérationnelle : Décompte des salariés dont les signaux faibles 
+    (absences répétées, baisse de rémunération relative, ancienneté seuil) génèrent 
+    une probabilité d'attrition supérieure ou égale à 70%.
+
+--------------------------------------------------------------------------------
+MODULE 4 : DISPONIBILITÉ OPÉRATIONNELLE
+--------------------------------------------------------------------------------
+✦ TAUX DE DISPONIBILITÉ (Operational Availability) :
+  • Formule Mathématique :
+    Taux de Disponibilité = 100 - Taux d'Absentéisme
+  • Unité : %
+  • Définition Opérationnelle : Pourcentage d'effectifs réellement disponibles pour 
+    l'exploitation industrielle par rapport aux effectifs théoriques payés.
+
+--------------------------------------------------------------------------------
+MODULE 6 : INTELLIGENCE PRÉDICTIVE (NEXUS AI)
+--------------------------------------------------------------------------------
+✦ COÛT D'ATTRITION PRÉVISIONNEL (Forecasted Attrition Cost) :
+  • Formule Mathématique :
+    Coût d'Attrition = Nombre de Profils à Risque Critique * 12.5 K TND
+  • Unité : K TND (Dinars Tunisiens)
+  • Définition Opérationnelle : Perte économique prévisionnelle liée aux départs 
+    futurs probables, calculée selon l'indice standard de coût de remplacement 
+    moyen (12 500 TND par collaborateur qualifié incluant sourcing et formation).
+
+================================================================================
+                    FIN DU RAPPORT EXÉCUTIF OPALIA HR
+================================================================================

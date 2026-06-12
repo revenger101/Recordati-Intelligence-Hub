@@ -1,0 +1,121 @@
+GUIDE ULTIME : DASHBOARD OPALIA HR - CONFIGURATION COMPLÈTE POWER BI
+
+Ce document regroupe TOUTES les informations nécessaires : Objectifs, Formules (DAX/SQL), Sources (Tables) et Configuration des Visuels (Axes X/Y).
+
+---------------------------------------------------------------------------
+1. PAGE : COMMAND CENTER (Centre de Pilotage Exécutif)
+---------------------------------------------------------------------------
+Objectif : Vue globale et alertes critiques pour la direction.
+
+KPIs & Formules :
+- Mémoire Globale (Total Historique)
+  Source: Table "fact_employee", Colonne [employee_id]
+  DAX: CountEmployees = COUNT(fact_employee[employee_id])
+  SQL: SELECT COUNT(*) FROM fact_employee;
+
+- Effectif Actif (Collaborateurs en poste)
+  Source: Table "fact_employee", Colonne [statut]
+  DAX: ActiveEmployees = CALCULATE([CountEmployees], fact_employee[statut] = "Actif")
+  SQL: SELECT COUNT(*) FROM fact_employee WHERE statut = 'Actif';
+
+- Taux de Turnover Moyen
+  Source: Tables "fact_turnover" (Départs) et "fact_employee" (Effectif)
+  DAX: TurnoverRate = DIVIDE(COUNT(fact_turnover[id]), [ActiveEmployees], 0)
+
+Visuels & Axes :
+- Graphique d'aires (Évolution temporelle)
+  Axe X: [date_embauche] (fact_employee) | Axe Y: Count (fact_employee)
+- Barres groupées (Flux annuel)
+  Axe X: Année | Axe Y1: [date_embauche] (fact_employee) | Axe Y2: [date_depart] (fact_turnover)
+
+---------------------------------------------------------------------------
+2. PAGE : WORKFORCE (Analyse des Effectifs)
+---------------------------------------------------------------------------
+Objectif : Comprendre la démographie et la répartition des talents.
+
+KPIs & Formules :
+- Âge Moyen
+  Source: Table "fact_employee", Colonne [age]
+  DAX: AverageAge = AVERAGE(fact_employee[age])
+- Ancienneté Moyenne
+  Source: Table "fact_employee", Colonne [anciennete_annees]
+  DAX: AverageSeniority = AVERAGE(fact_employee[anciennete_annees])
+
+Visuels & Axes :
+- Pyramide des Âges (Barres empilées)
+  Axe Y: [age] (fact_employee) | Axe X: Count(employee_id) | Légende: Genre
+- Treemap (Départements)
+  Groupe: [departement] (fact_employee) | Valeur: [ActiveEmployees]
+- Top Postes (Barres horizontales)
+  Axe Y: [poste] (fact_employee) | Axe X: [ActiveEmployees]
+
+---------------------------------------------------------------------------
+3. PAGE : TURNOVER (Gestion des Départs)
+---------------------------------------------------------------------------
+Objectif : Identifier les causes de départ et réduire l'attrition.
+
+KPIs & Formules :
+- Départs YTD (Year To Date)
+  Source: Table "fact_turnover", Colonne [date_depart]
+  DAX: DeparturesYTD = TOTALYTD(COUNT(fact_turnover[id]), fact_turnover[date_depart])
+
+Visuels & Axes :
+- Waterfall (Cascade des flux)
+  Catégorie: Temps | Valeur: [date_depart] (fact_turnover) vs [date_embauche] (fact_employee)
+- Barres empilées (Motifs par Dept)
+  Axe X: [departement] (fact_turnover) | Axe Y: Count(id) | Légende: [type_depart] (fact_turnover)
+
+---------------------------------------------------------------------------
+4. PAGE : ABSENTEEISM (Suivi de l'Absentéisme)
+---------------------------------------------------------------------------
+Objectif : Surveiller le climat social et l'impact sur la production.
+
+KPIs & Formules :
+- Taux d'Absentéisme
+  Source: Table "fact_absence", Colonne [duree_jours]
+  DAX: AbsRate = DIVIDE(SUM(fact_absence[duree_jours]), [ActiveEmployees] * 22, 0)
+
+Visuels & Axes :
+- Heatmap (Matrice)
+  Colonnes: Mois ([date_absence]) | Lignes: [departement] | Valeur: [AbsRate]
+- Combo Chart (Absence vs Heures Sup)
+  Axe X: Mois | Axe Y1 (Barre): [duree_jours] (fact_absence) | Axe Y2 (Ligne): [heures] (heures_supp)
+
+---------------------------------------------------------------------------
+5. PAGE : PAYROLL (Masse Salariale)
+---------------------------------------------------------------------------
+Objectif : Pilotage financier des ressources humaines.
+
+KPIs & Formules :
+- Masse Salariale
+  Source: Table "fact_employee", Colonne [salaire]
+  DAX: TotalPayroll = SUM(fact_employee[salaire])
+
+Visuels & Axes :
+- Coûts par Dept (Barres horizontales)
+  Axe Y: [departement] | Axe X: [salaire] (Somme)
+
+---------------------------------------------------------------------------
+6. PAGE : PREDICTIVE AI (Intelligence Artificielle Nexus)
+---------------------------------------------------------------------------
+Objectif : Anticiper les départs avant qu'ils ne surviennent.
+
+KPIs & Formules :
+- Score de Risque Moyen
+  Source: Vue "vw_pbi_analytics", Colonne [probabilite_turnover]
+  DAX: AvgRiskScore = AVERAGE(vw_pbi_analytics[probabilite_turnover])
+
+Visuels & Axes :
+- Scatter Plot (Nuage de points)
+  Axe X: [probabilite_turnover] | Axe Y: [salaire] | Détails: [nom] | Légende: [niveau_risque]
+- Jauge (Gauge)
+  Valeur: [AvgRiskScore] | Cible: 0.15
+
+---------------------------------------------------------------------------
+RAPPEL DES TABLES SOURCES (PostgreSQL localhost:5433 / rh_db) :
+1. fact_employee : Profils, Salaires, Postes, Statuts.
+2. fact_absence  : Registre des absences et motifs.
+3. fact_turnover : Registre des départs et motifs.
+4. fact_recruitment : Historique des embauches.
+5. vw_pbi_analytics : Vue consolidée pour l'IA Prédictive.
+---------------------------------------------------------------------------

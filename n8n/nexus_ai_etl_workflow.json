@@ -1,0 +1,174 @@
+{
+  "name": "OpaliaHR Nexus AI - ETL & Prediction Automation",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 2 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Cron Trigger (2 AM)",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        250,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python ../scripts/nexus_ai_etl_engine.py"
+      },
+      "name": "Run ETL Engine",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        450,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python ../scripts/train_random_forest.py"
+      },
+      "name": "Run AI Prediction (Random Forest)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        650,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python ../scripts/generate_strategic_recommendations.py"
+      },
+      "name": "Generate AI Recommendations",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        850,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "channel": "#hr-analytics-alerts",
+        "text": "OpaliaHR Nexus AI: Nightly ETL and AI Pipeline completed successfully. Data Warehouse is up to date."
+      },
+      "name": "Slack Notification (Success)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [
+        1050,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "channel": "#hr-analytics-alerts",
+        "text": "=OpaliaHR Nexus AI Pipeline FAILED!\nError Details: {{$json.error.message}}"
+      },
+      "name": "Slack Notification (Error)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [
+        1050,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{$json.exitCode}}",
+              "value2": 0
+            }
+          ]
+        }
+      },
+      "name": "Check AI Execution Status",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Cron Trigger (2 AM)": {
+      "main": [
+        [
+          {
+            "node": "Run ETL Engine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run ETL Engine": {
+      "main": [
+        [
+          {
+            "node": "Run AI Prediction (Random Forest)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run AI Prediction (Random Forest)": {
+      "main": [
+        [
+          {
+            "node": "Generate AI Recommendations",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate AI Recommendations": {
+      "main": [
+        [
+          {
+            "node": "Check AI Execution Status",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check AI Execution Status": {
+      "main": [
+        [
+          {
+            "node": "Slack Notification (Success)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Slack Notification (Error)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "versionId": "2f6e91f1-79b8-406f-b257-2e3895e638d2",
+  "id": "1",
+  "tags": []
+}
