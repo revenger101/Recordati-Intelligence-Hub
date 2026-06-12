@@ -1,0 +1,12 @@
+{
+  "last_etl": "2026-06-12T17:05:39Z",
+  "status": "success",
+  "rows": {
+    "employees": 359,
+    "absences": 494,
+    "turnover": 90,
+    "snapshots": 15988,
+    "recruitment": 363,
+    "predictions": 359
+  }
+}

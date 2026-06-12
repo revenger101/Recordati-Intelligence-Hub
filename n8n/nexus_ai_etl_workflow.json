@@ -15,10 +15,7 @@
       "name": "Cron Trigger (2 AM)",
       "type": "n8n-nodes-base.cron",
       "typeVersion": 1,
-      "position": [
-        250,
-        300
-      ]
+      "position": [250, 300]
     },
     {
       "parameters": {
@@ -27,10 +24,7 @@
       "name": "Run ETL Engine",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [
-        450,
-        300
-      ]
+      "position": [450, 300]
     },
     {
       "parameters": {
@@ -39,10 +33,7 @@
       "name": "Run AI Prediction (Random Forest)",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [
-        650,
-        300
-      ]
+      "position": [650, 300]
     },
     {
       "parameters": {
@@ -51,36 +42,7 @@
       "name": "Generate AI Recommendations",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [
-        850,
-        300
-      ]
-    },
-    {
-      "parameters": {
-        "channel": "#hr-analytics-alerts",
-        "text": "OpaliaHR Nexus AI: Nightly ETL and AI Pipeline completed successfully. Data Warehouse is up to date."
-      },
-      "name": "Slack Notification (Success)",
-      "type": "n8n-nodes-base.slack",
-      "typeVersion": 1,
-      "position": [
-        1050,
-        200
-      ]
-    },
-    {
-      "parameters": {
-        "channel": "#hr-analytics-alerts",
-        "text": "=OpaliaHR Nexus AI Pipeline FAILED!\nError Details: {{$json.error.message}}"
-      },
-      "name": "Slack Notification (Error)",
-      "type": "n8n-nodes-base.slack",
-      "typeVersion": 1,
-      "position": [
-        1050,
-        400
-      ]
+      "position": [850, 300]
     },
     {
       "parameters": {
@@ -96,74 +58,71 @@
       "name": "Check AI Execution Status",
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
-      "position": [
-        1000,
-        300
-      ]
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "command": "python -c \"\nimport json, os, datetime\n\nwarehouse = os.path.join(os.path.dirname(os.path.abspath('.')), 'DataWarehouse')\n\ndef count_rows(filename):\n    filepath = os.path.join(warehouse, filename)\n    if not os.path.exists(filepath):\n        return 0\n    with open(filepath, 'r', encoding='utf-8') as f:\n        lines = [l for l in f.readlines() if l.strip()]\n    return max(0, len(lines) - 1)\n\nsignal = {\n    'last_etl': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),\n    'status': 'success',\n    'rows': {\n        'employees':   count_rows('Dim_Employee.csv'),\n        'absences':    count_rows('Fact_Absence.csv'),\n        'turnover':    count_rows('Fact_Turnover.csv'),\n        'snapshots':   count_rows('Fact_Employee_Snapshot.csv'),\n        'recruitment': count_rows('Fact_Recruitment.csv'),\n        'predictions': count_rows('predictions_log.csv')\n    }\n}\n\nout = os.path.join(warehouse, 'refresh_signal.json')\nwith open(out, 'w') as f:\n    json.dump(signal, f, indent=2)\n\nprint('refresh_signal.json written:', json.dumps(signal))\n\""
+      },
+      "name": "Write Refresh Signal",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1250, 200]
+    },
+    {
+      "parameters": {
+        "channel": "#hr-analytics-alerts",
+        "text": "=OpaliaHR Nexus AI: Nightly ETL and AI Pipeline completed successfully.\nData Warehouse synchronized — Power BI dataset ready for refresh.\nLast ETL: {{$now}}"
+      },
+      "name": "Slack Notification (Success)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [1450, 200]
+    },
+    {
+      "parameters": {
+        "command": "python -c \"\nimport json, os, datetime\n\nwarehouse = os.path.join(os.path.dirname(os.path.abspath('.')), 'DataWarehouse')\nsignal = {\n    'last_etl': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),\n    'status': 'error'\n}\nout = os.path.join(warehouse, 'refresh_signal.json')\nwith open(out, 'w') as f:\n    json.dump(signal, f, indent=2)\n\""
+      },
+      "name": "Write Error Signal",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1250, 400]
+    },
+    {
+      "parameters": {
+        "channel": "#hr-analytics-alerts",
+        "text": "=OpaliaHR Nexus AI Pipeline FAILED!\nError Details: {{$json.error.message}}"
+      },
+      "name": "Slack Notification (Error)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [1450, 400]
     }
   ],
   "connections": {
     "Cron Trigger (2 AM)": {
-      "main": [
-        [
-          {
-            "node": "Run ETL Engine",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+      "main": [[{ "node": "Run ETL Engine", "type": "main", "index": 0 }]]
     },
     "Run ETL Engine": {
-      "main": [
-        [
-          {
-            "node": "Run AI Prediction (Random Forest)",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+      "main": [[{ "node": "Run AI Prediction (Random Forest)", "type": "main", "index": 0 }]]
     },
     "Run AI Prediction (Random Forest)": {
-      "main": [
-        [
-          {
-            "node": "Generate AI Recommendations",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+      "main": [[{ "node": "Generate AI Recommendations", "type": "main", "index": 0 }]]
     },
     "Generate AI Recommendations": {
-      "main": [
-        [
-          {
-            "node": "Check AI Execution Status",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
+      "main": [[{ "node": "Check AI Execution Status", "type": "main", "index": 0 }]]
     },
     "Check AI Execution Status": {
       "main": [
-        [
-          {
-            "node": "Slack Notification (Success)",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Slack Notification (Error)",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        [{ "node": "Write Refresh Signal", "type": "main", "index": 0 }],
+        [{ "node": "Write Error Signal",   "type": "main", "index": 0 }]
       ]
+    },
+    "Write Refresh Signal": {
+      "main": [[{ "node": "Slack Notification (Success)", "type": "main", "index": 0 }]]
+    },
+    "Write Error Signal": {
+      "main": [[{ "node": "Slack Notification (Error)", "type": "main", "index": 0 }]]
     }
   },
   "active": false,

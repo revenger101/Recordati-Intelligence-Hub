@@ -885,19 +885,158 @@ app.delete('/api/tasks/:id', authenticateJWT, async (req, res) => {
 app.get('/api/powerbi/open', authenticateJWT, (req, res) => {
   const filePath = path.resolve(__dirname, '..', 'OPALIAHR_DASH.pbix');
   console.log(`[PBI] Attempting to open: ${filePath}`);
-  
+
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: true, message: "Fichier .pbix introuvable à la racine du projet." });
   }
 
   const command = process.platform === 'win32' ? `start "" "${filePath}"` : `open "${filePath}"`;
-  
+
   exec(command, (err) => {
     if (err) {
       console.error('[PBI-ERR]', err);
       return res.status(500).json({ error: true, message: `Erreur système: ${err.message}` });
     }
     res.json({ success: true, message: "Ouverture de Power BI Desktop..." });
+  });
+});
+
+// ── POWER BI DATASET API ─────────────────────────────────────────────────────
+// These endpoints are consumed by Power BI Desktop via Power Query Web connector.
+// Each endpoint returns a DataWarehouse table as a flat JSON array.
+// Power Query M syntax: = Json.Document(Web.Contents("http://localhost:3000/api/powerbi/dataset/employees"))
+
+const SIGNAL_PATH = path.join(WAREHOUSE_DIR, 'refresh_signal.json');
+
+// Helper: count rows safely
+const countRows = (filename) => {
+  try {
+    const filePath = path.join(WAREHOUSE_DIR, filename);
+    if (!fs.existsSync(filePath)) return 0;
+    const lines = fs.readFileSync(filePath, 'utf-8').split('\n').filter(l => l.trim());
+    return Math.max(0, lines.length - 1); // subtract header
+  } catch { return 0; }
+};
+
+// GET /api/powerbi/status
+// Returns the last ETL signal file written by n8n, plus live row counts for all tables.
+app.get('/api/powerbi/status', authenticateJWT, (req, res) => {
+  try {
+    let signal = { last_etl: null, status: 'unknown', rows: {} };
+    if (fs.existsSync(SIGNAL_PATH)) {
+      signal = JSON.parse(fs.readFileSync(SIGNAL_PATH, 'utf-8'));
+    }
+
+    const row_counts = {
+      employees:   countRows('Dim_Employee.csv'),
+      absences:    countRows('Fact_Absence.csv'),
+      turnover:    countRows('Fact_Turnover.csv'),
+      snapshots:   countRows('Fact_Employee_Snapshot.csv'),
+      recruitment: countRows('Fact_Recruitment.csv'),
+      departments: countRows('Dim_Department.csv'),
+      positions:   countRows('Dim_Position.csv'),
+      dates:       countRows('Dim_Date.csv'),
+      predictions: countRows('predictions_log.csv'),
+    };
+
+    res.json({
+      last_etl:    signal.last_etl || null,
+      status:      signal.status  || 'pending',
+      sync_source: 'DataWarehouse (CSV Star Schema)',
+      row_counts,
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/powerbi/dataset/employees  →  Dim_Employee.csv
+app.get('/api/powerbi/dataset/employees', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Dim_Employee.csv'));
+});
+
+// GET /api/powerbi/dataset/absences  →  Fact_Absence.csv
+app.get('/api/powerbi/dataset/absences', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Fact_Absence.csv'));
+});
+
+// GET /api/powerbi/dataset/turnover  →  Fact_Turnover.csv
+app.get('/api/powerbi/dataset/turnover', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Fact_Turnover.csv'));
+});
+
+// GET /api/powerbi/dataset/snapshots  →  Fact_Employee_Snapshot.csv
+app.get('/api/powerbi/dataset/snapshots', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Fact_Employee_Snapshot.csv'));
+});
+
+// GET /api/powerbi/dataset/recruitment  →  Fact_Recruitment.csv
+app.get('/api/powerbi/dataset/recruitment', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Fact_Recruitment.csv'));
+});
+
+// GET /api/powerbi/dataset/departments  →  Dim_Department.csv
+app.get('/api/powerbi/dataset/departments', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Dim_Department.csv'));
+});
+
+// GET /api/powerbi/dataset/positions  →  Dim_Position.csv
+app.get('/api/powerbi/dataset/positions', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Dim_Position.csv'));
+});
+
+// GET /api/powerbi/dataset/dates  →  Dim_Date.csv
+app.get('/api/powerbi/dataset/dates', authenticateJWT, (req, res) => {
+  res.json(getCSVData('Dim_Date.csv'));
+});
+
+// GET /api/powerbi/dataset/predictions  →  predictions_log.csv (ML risk scores)
+app.get('/api/powerbi/dataset/predictions', authenticateJWT, (req, res) => {
+  res.json(getCSVData('predictions_log.csv'));
+});
+
+// GET /api/powerbi/dataset/fact-employee  →  fact_employee.csv (salary + risk)
+app.get('/api/powerbi/dataset/fact-employee', authenticateJWT, (req, res) => {
+  res.json(getCSVData('fact_employee.csv'));
+});
+
+// POST /api/powerbi/schedule  →  Register (or remove) the Task Scheduler job
+// Body: { action: "register" | "unregister" | "run-now" }
+app.post('/api/powerbi/schedule', authenticateJWT, (req, res) => {
+  const { action = 'register' } = req.body || {};
+  const registerScript = path.resolve(__dirname, '../scripts/register_pbi_scheduler.ps1');
+  const taskName       = 'OpaliaHR_PBI_AutoRefresh';
+  const projectRoot    = path.resolve(__dirname, '..');
+
+  const cmds = {
+    register:   `powershell -NonInteractive -ExecutionPolicy Bypass -File "${registerScript}" -ProjectRoot "${projectRoot}"`,
+    unregister: `powershell -NonInteractive -Command "Unregister-ScheduledTask -TaskName '${taskName}' -Confirm:$false"`,
+    'run-now':  `powershell -NonInteractive -Command "Start-ScheduledTask -TaskName '${taskName}'"`,
+  };
+
+  const cmd = cmds[action];
+  if (!cmd) return res.status(400).json({ error: `Unknown action: ${action}` });
+
+  exec(cmd, (err, stdout, stderr) => {
+    if (err) return res.status(500).json({ error: err.message, stderr });
+    res.json({ success: true, action, output: stdout.trim() });
+  });
+});
+
+// GET /api/powerbi/schedule/status  →  Check if the Task Scheduler job is registered
+app.get('/api/powerbi/schedule/status', authenticateJWT, (req, res) => {
+  const taskName = 'OpaliaHR_PBI_AutoRefresh';
+  const cmd = `powershell -NonInteractive -Command "try { $t = Get-ScheduledTask -TaskName '${taskName}' -ErrorAction Stop; Write-Output ($t | ConvertTo-Json -Compress) } catch { Write-Output 'NOT_FOUND' }"`;
+  exec(cmd, (err, stdout) => {
+    if (err || stdout.trim() === 'NOT_FOUND') {
+      return res.json({ registered: false, task: null });
+    }
+    try {
+      const task = JSON.parse(stdout.trim());
+      res.json({ registered: true, task: { name: task.TaskName, state: task.State, lastRun: task.LastRunTime } });
+    } catch {
+      res.json({ registered: stdout.includes(taskName), task: null });
+    }
   });
 });
 
